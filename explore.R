@@ -89,7 +89,7 @@ calculateATACregions <- function(chrom, loc.start, loc.end, display)
       track.end   <- loc.end
       tbl.gene <- subset(tbl.tmp, chr==chrom & start >= track.start & end <= track.end)
       if(nrow(tbl.gene) == 0){
-         printf("now atac regions found for %s:%d-%d in %s", chrom, track.start, track.end, filename)
+         printf("no atac regions found for %s:%d-%d in %s", chrom, track.start, track.end, filename)
          next;
          }
       tbl.gene$sample = id
@@ -282,7 +282,7 @@ simple.demo <- function()
                                         pwmMatchMinimumAsPercentage=90,
                                         source="TFClass",
                                         trackName=sprintf("%s.%d%%", targetGene, 90))
-       # now make a trena model.
+   # now make a trena model.
        # the pcaMaxThreshold is generous: several low-significance gnees are therefore included
        # but because the region is small, let's leave them in for now.
    model <- makeModel(trena, targetGene, targetGene.tss, tbl.motifs, mtx.rna, pcaMaxThreshold=0.5)
@@ -290,6 +290,8 @@ simple.demo <- function()
        # one option is to now examine model$model, keeping only those (for instance) with a
        # random forest score > 10 or ....
    model$model <- subset(model$model, rf.score > 10)
+       # eliminate all motifs whose transcription factors are not named in the gene model
+   model$regions <- subset(model$regions, geneSymbol %in% model$model$gene)
        # just one model, but we can make more, and view them on demand in cytoscape.js
    models <- list(simple=model)
 
