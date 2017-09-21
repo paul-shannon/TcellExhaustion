@@ -37,13 +37,13 @@ readHamidsTCellNetwork <- function()
 #----------------------------------------------------------------------------------------------------
 #    The are 3 replicates for each of expression and ATAC-seq peaks for 'naive' T cells:
 #
-#     GSM2365761 	RNA_N1
-#     GSM2365762 	RNA_N2
-#     GSM2365763 	RNA_N3
+#     GSM2365761        RNA_N1
+#     GSM2365762        RNA_N2
+#     GSM2365763        RNA_N3
 #
-#     GSM2365799 	ATAC_N1
-#     GSM2365800 	ATAC_N2
-#     GSM2365801 	ATAC_N3
+#     GSM2365799        ATAC_N1
+#     GSM2365800        ATAC_N2
+#     GSM2365801        ATAC_N3
 #
 #   These define the starting state of the T cells (point of
 #   reference). At this point the cells are mature but "inexperienced".
@@ -96,8 +96,8 @@ calculateATACregions <- function(chrom, loc.start, loc.end, display)
       colnames(tbl.gene)[7] <- "score"
       #printf("colors[%d]: %s", i, colors[i])
       tbls.regions[[id]] <- tbl.gene
-      if(display)
-        addBedGraphTrackFromDataFrame(tv, id, tbl.gene[, c(1,2,3,7,5)], color=colors[i], minValue=0, maxValue=750)
+      # if(display)
+        # addBedGraphTrackFromDataFrame(tv, id, tbl.gene[, c(1,2,3,7,5)], color=colors[i], minValue=0, maxValue=750)
       }
 
    tbl.regions <- do.call(rbind, tbls.regions)[, c(1,2,3,7,8)]
@@ -162,6 +162,11 @@ findAndDisplayMotifs <- function(tbl.regions, pwmMatchMinimumAsPercentage, sourc
 readExpressionFiles <- function()
 {
    rna.files <- grep("RNA", list.files("./data/"), v=TRUE)
+   if(length(rna.files) == 0){
+      stop(sprintf("cannot find rna files from current working directory, %s", getwd()))
+      }
+   printf ("read %d RNA files", length(rna.files))
+
    sample.name.tokens <- strsplit(rna.files, "_")
    sample.names <- unlist(lapply(sample.name.tokens, function(tokens) sprintf("%s.%s", tokens[3], tokens[4])))
    names(rna.files) <- sample.names
@@ -269,19 +274,65 @@ simple.demo <- function()
    tbl.regions.atac <- with(current.region,
                             calculateATACregions(chrom=chrom, loc.start=start,  loc.end=end, display=TRUE))
 
+      # pshannon added next four lines, emulating the ones which follow
+
+   rowsN <- tbl.regions.atac[1:3, ]
+   newN <- rowsN[1, ]
+   newN$score <- mean(rowsN$score)
+   newN$sample <- "N"
+
+   rows5 <- tbl.regions.atac[4:7, ]
+   new5 <- rows5[1, ]
+   new5$score <- mean(rows5$score)
+   new5$sample <- "TD5"
+
+   rows7 <- tbl.regions.atac[8:10, ]
+   new7 <- rows7[1, ]
+   new7$score <- mean(rows7$score)
+   new7$sample <- "TD7"
+
+   rows14 <- tbl.regions.atac[11:13, ]
+   new14 <- rows14[1, ]
+   new14$score <- mean(rows14$score)
+   new14$sample <- "TD14"
+
+   rows21 <- tbl.regions.atac[14:16, ]
+   new21 <- rows21[1, ]
+   new21$score <- mean(rows21$score)
+   new21$sample <- "TD21"
+
+   HB.tbl.regions.atac <- rbind(newN, new5, new7, new14, new21)
+   HB.tbl.regions.atac.toDisplay <- HB.tbl.regions.atac
+   colnames(HB.tbl.regions.atac.toDisplay)[1] <- "chr"
+   HB.tbl.regions.atac.toDisplay$score <- round(HB.tbl.regions.atac.toDisplay$score)
+
+   colors <- rainbow_hcl(nrow(HB.tbl.regions.atac.toDisplay))
+     # clear off all tracks but Gencode, the first track
+   removeTracksByName(tv, getTrackNames(tv)[-1])
+
+   for (i in 1:nrow(HB.tbl.regions.atac)) {
+     addBedGraphTrackFromDataFrame(tv,
+                                   HB.tbl.regions.atac.toDisplay$sample[i],
+                                   HB.tbl.regions.atac.toDisplay[i,],       # pshannon added [i,]
+                                   displayMode = "COLLAPSED",
+                                   color=colors[i],
+                                   minValue=0,
+                                   maxValue=max(HB.tbl.regions.atac.toDisplay$score))
+    }
+
      # prepare to identify motifs in these regions: collapse the many tracks into the two
      # genomic regions they cover
-   tbl.regions.collapsed <- unique(tbl.regions.atac[, c("chrom", "start", "end")])
+   tbl.regions.collapsed <- unique(HB.tbl.regions.atac[, c("chrom", "start", "end")])
 
       # the called function collects and provides motif pfms from MotifDb,
       # in this case, all jaspar2016 human and mouse.
       # other choices are certanly reasonable
       # this step is slow because each motif in the pfms list is matched against
       # the sequence in the two regions
-   tbl.motifs <- findAndDisplayMotifs(tbl.regions.atac,
-                                        pwmMatchMinimumAsPercentage=90,
-                                        source="TFClass",
-                                        trackName=sprintf("%s.%d%%", targetGene, 90))
+   tbl.motifs <- findAndDisplayMotifs(tbl.regions.collapsed,
+                                        pwmMatchMinimumAsPercentage=100,
+                                        source="MotifDb", # pshannon capitialized leading 'M'
+                                        trackName=sprintf("%s.%d%%", targetGene, 100))
    # now make a trena model.
        # the pcaMaxThreshold is generous: several low-significance gnees are therefore included
        # but because the region is small, let's leave them in for now.
@@ -295,7 +346,7 @@ simple.demo <- function()
        # just one model, but we can make more, and view them on demand in cytoscape.js
    models <- list(simple=model)
 
-   g <- buildMultiModelGraph(tv, targetGene="TCF7", models)
+   g <- buildMultiModelGraph(tv, targetGene="TCF7", models) # comment out for speed
    g.lo <- addGeneModelLayout(tv, g, xPos.span=1500)
    setGraph(tv, g.lo, names(models))
    setStyle(tv, "style.js")
@@ -305,3 +356,40 @@ simple.demo <- function()
 
 } # simple.demo
 #----------------------------------------------------------------------------------------------------
+hamids.new.mouse.stringent.motifs <- function(match.threshold)
+{
+   current.region <- parseChromLocString(getGenomicRegion(tv))
+   tbl.regions <- data.frame(chrom=current.region$chrom,
+                             start=current.region$start,
+                             end=current.region$end,
+                             stringsAsFactors=FALSE)
+
+   #organism.rows <- grep ('Mmusculus', values(MotifDb)$organism, ignore.case=TRUE)
+   #source.rows <- grep ('JASPAR', values(MotifDb)$dataSource, ignore.case=TRUE)
+   #mouse.jaspar.rows <- intersect (organism.rows, source.rows)	# 278 PWMs
+   #mouse.jaspar.pfms <- MotifDb [mouse.jaspar.rows]
+
+   mouse.jaspar.pfms <- query(query(MotifDb, "JASPAR"), "mmus")  # pshannon simplification
+
+   pfms <- as.list(mouse.jaspar.pfms)
+   motifMatcher <- MotifMatcher(genomeName="mm10", pfms)
+
+   tbl.motifs <- findMatchesByChromosomalRegion(motifMatcher, tbl.regions,
+						pwmMatchMinimumAsPercentage=match.threshold) # pshannon loosened constraint
+
+   tbl.toDisplay <- tbl.motifs[, c("chrom", "motifStart", "motifEnd",
+                                   "motifName", "motifScore")]
+   tmp <- strsplit(tbl.toDisplay$motifName, "-")
+   tbl.toDisplay$motifName <- unlist(lapply(tmp, function(x) x[3]))
+
+   trackName <- sprintf("mouse.%d", match.threshold)
+   addBedTrackFromDataFrame(tv, trackName=trackName, tbl.toDisplay, color="blue")
+
+} # hamids.new.mouse.stringent.motifs
+#----------------------------------------------------------------------------------------------------
+
+# >  source(explore.R)  # the latest version, which you will have just pulled down
+# >  x <- simple.demo()
+# >  names(x) # “tv” “model”
+# >  names(x$model) # “model” “regions”   model$model is the gene model data.frame.  regions is all the motif info
+# >  dim(x$model$regions) # 49 17
