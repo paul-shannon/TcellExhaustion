@@ -135,6 +135,10 @@ findAndDisplayMotifs <- function(tbl.regions, pwmMatchMinimumAsPercentage, sourc
    tbl.regions.uniq <- unique(tbl.regions[, 1:3])
    print(tbl.regions.uniq)
    tbl.motifs <- findMatchesByChromosomalRegion(mm, tbl.regions.uniq, pwmMatchMinimumAsPercentage=pwmMatchMinimumAsPercentage)
+   if(nrow(tbl.motifs) == 0){
+      printf("--- no match of pfms in supplied regions at %d%%", pwmMatchMinimumAsPercentage)
+      return(data.frame())
+      }
 
    shortMotifs <- unlist(lapply(strsplit(tbl.motifs$motifName, "-"), function(tokens) tokens[length(tokens)]))
    tbl.motifs$shortMotif <- shortMotifs
@@ -333,6 +337,7 @@ simple.demo <- function()
                                         pwmMatchMinimumAsPercentage=100,
                                         source="MotifDb", # pshannon capitialized leading 'M'
                                         trackName=sprintf("%s.%d%%", targetGene, 100))
+   tbl.motifs.oldSchool <<- tbl.motifs
    # now make a trena model.
        # the pcaMaxThreshold is generous: several low-significance gnees are therefore included
        # but because the region is small, let's leave them in for now.
@@ -384,6 +389,8 @@ hamids.new.mouse.stringent.motifs <- function(match.threshold)
 
    trackName <- sprintf("mouse.%d", match.threshold)
    addBedTrackFromDataFrame(tv, trackName=trackName, tbl.toDisplay, color="blue")
+
+   invisible(tbl.motifs)
 
 } # hamids.new.mouse.stringent.motifs
 #----------------------------------------------------------------------------------------------------
