@@ -4,6 +4,7 @@ library(colorspace)
 library(annotate)
 library(org.Mm.eg.db)
 library(MotifDb)
+library(biomaRt)
 #--------------------------------------------------------------------------------
 printf <- function(...) print(noquote(sprintf(...)))
 #--------------------------------------------------------------------------------
@@ -14,14 +15,20 @@ if(!exists("trena"))
    trena <- Trena("mm10")
 
 PORT.RANGE <- 8000:8020
+# tv <- FALSE   # no browser visualization needed
+
 if(!exists("tv")) {
    tv <- trenaViz(PORT.RANGE, quiet=FALSE)
    setGenome(tv, "mm10")
    }
+
+if(!exists("mm10.mart")){
+   mm10.mart <- useMart(biomart="ensembl", dataset="mmusculus_gene_ensembl")
+   }
 #----------------------------------------------------------------------------------------------------
 readHamidsTCellNetwork <- function()
 {
-   tbl <- read.table("cytoscapeEdgeAnnot_11July2017.txt", sep="\t", header=TRUE, as.is=TRUE)
+   tbl <- read.table("data/cytoscapeEdgeAnnot_11July2017.txt", sep="\t", header=TRUE, as.is=TRUE)
    tbl.xtab <- as.data.frame(table(c(tbl$Source, tbl$Target)))
    tbl.xtab <- tbl.xtab[order(tbl.xtab$Freq, decreasing=TRUE),]
    head(tbl.xtab)
@@ -96,9 +103,9 @@ calculateATACregions <- function(chrom, loc.start, loc.end, display)
       colnames(tbl.gene)[7] <- "score"
       #printf("colors[%d]: %s", i, colors[i])
       tbls.regions[[id]] <- tbl.gene
-      # if(display)
-        # addBedGraphTrackFromDataFrame(tv, id, tbl.gene[, c(1,2,3,7,5)], color=colors[i], minValue=0, maxValue=750)
-      }
+      if(display)
+         addBedGraphTrackFromDataFrame(tv, id, tbl.gene[, c(1,2,3,7,5)], color=colors[i], minValue=0, maxValue=750)
+      } # for id
 
    tbl.regions <- do.call(rbind, tbls.regions)[, c(1,2,3,7,8)]
    tbl.regions <- tbl.regions[order(tbl.regions$start, decreasing=FALSE),]
@@ -127,9 +134,9 @@ plotAtaqSeqScores <- function(tbl.regions)
 findAndDisplayMotifs <- function(tbl.regions, pwmMatchMinimumAsPercentage, source, trackName)
 {
    stopifnot(source %in% c("MotifDb", "TFClass"))
-   pfms.mouse <- query(query(MotifDb, "jaspar2016"), "mmus")
-   pfms.human <- query(query(MotifDb, "jaspar2016"), "hsap")
-   pfms <- as.list(c(pfms.human, pfms.mouse))
+   #pfms.mouse <- query(query(MotifDb, "jaspar2016"), "mmus")
+   #pfms.human <- query(query(MotifDb, "jaspar2016"), "hsap")
+   pfms <- as.list(query(query(MotifDb, "jaspar"), "mmus"))    # 278 total
    mm <- MotifMatcher(genomeName="mm10", pfms)
 
    tbl.regions.uniq <- unique(tbl.regions[, 1:3])
@@ -256,7 +263,6 @@ makeModel <- function(trena, targetGene, targetGene.tss, tbl.motifs, mtx.rna, pc
   tbl.tfBindingFreq <- as.data.frame(table(tbl.regulatoryRegions.strong$geneSymbol))
   tbl.tfBindingFreq <- tbl.tfBindingFreq[order(tbl.tfBindingFreq$Freq, decreasing=TRUE),]
   colnames(tbl.tfBindingFreq) <- c("gene", "binding.sites")
-  tbl.geneModel.strong <- merge(tbl.geneModel.strong, tbl.tfBindingFreq, by="gene")
   tbl.geneModel.strong <- tbl.geneModel.strong[order(tbl.geneModel.strong$pcaMax, decreasing=TRUE),]
   list(model=tbl.geneModel.strong, regions=tbl.regulatoryRegions.strong)
 
@@ -333,23 +339,26 @@ simple.demo <- function()
       # other choices are certanly reasonable
       # this step is slow because each motif in the pfms list is matched against
       # the sequence in the two regions
+   PC <- 90
    tbl.motifs <- findAndDisplayMotifs(tbl.regions.collapsed,
-                                        pwmMatchMinimumAsPercentage=100,
-                                        source="MotifDb", # pshannon capitialized leading 'M'
-                                        trackName=sprintf("%s.%d%%", targetGene, 100))
+                                      pwmMatchMinimumAsPercentage=PC,
+                                      source="MotifDb", # pshannon capitialized leading 'M'
+                                      trackName=sprintf("%s.%d%%", targetGene, PC))
    tbl.motifs.oldSchool <<- tbl.motifs
    # now make a trena model.
        # the pcaMaxThreshold is generous: several low-significance gnees are therefore included
        # but because the region is small, let's leave them in for now.
    model <- makeModel(trena, targetGene, targetGene.tss, tbl.motifs, mtx.rna, pcaMaxThreshold=0.5)
+   colnames(model$model) <- gsub(".", "", colnames(model$model), fixed=TRUE)
 
        # one option is to now examine model$model, keeping only those (for instance) with a
        # random forest score > 10 or ....
-   model$model <- subset(model$model, rf.score > 10)
+   #model$model <- subset(model$model, rf.score > 10)
        # eliminate all motifs whose transcription factors are not named in the gene model
-   model$regions <- subset(model$regions, geneSymbol %in% model$model$gene)
+   #model$regions <- subset(model$regions, geneSymbol %in% model$model$gene)
        # just one model, but we can make more, and view them on demand in cytoscape.js
    models <- list(simple=model)
+   models <- list(simple=model, same=model)
 
    g <- buildMultiModelGraph(tv, targetGene="TCF7", models) # comment out for speed
    g.lo <- addGeneModelLayout(tv, g, xPos.span=1500)
@@ -394,9 +403,3 @@ hamids.new.mouse.stringent.motifs <- function(match.threshold)
 
 } # hamids.new.mouse.stringent.motifs
 #----------------------------------------------------------------------------------------------------
-
-# >  source(explore.R)  # the latest version, which you will have just pulled down
-# >  x <- simple.demo()
-# >  names(x) # “tv” “model”
-# >  names(x$model) # “model” “regions”   model$model is the gene model data.frame.  regions is all the motif info
-# >  dim(x$model$regions) # 49 17
