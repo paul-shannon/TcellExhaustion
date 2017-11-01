@@ -16,9 +16,14 @@ stopifnot(packageVersion("MotifDb")  >= "1.19.18")
 if(!exists("trena"))
    trena <- Trena("mm10", quiet=TRUE)
 
+
 PORT.RANGE <- 8000:8020
 #tv <- FALSE   # no browser visualization needed
 
+if(!exists("tv")){
+   tv <-  trenaViz(PORT.RANGE, quiet=TRUE)
+   setGenome(tv, "mm10")
+   }
 
 if(!exists("mm10.mart")){
    mm10.mart <- useMart(biomart="ensembl", dataset="mmusculus_gene_ensembl")
@@ -84,16 +89,22 @@ readExpressionFiles <- function()
    gene.column <- grep("gene", colnames(tbl.rna))
    mtx.rna <- as.matrix(tbl.rna[, -gene.column])
    rownames(mtx.rna) <- toupper(rownames(mtx.rna))
-   zeros <- which(rowSums(mtx.rna) == 0)
-   if(length(zeros) > 0)
-      mtx.rna <- mtx.rna[-zeros, , drop=FALSE]
 
    printf("--- mtx.rna, %d x %d", nrow(mtx.rna), ncol(mtx.rna))
    printf("mtx.rna before asinh transform: ")
    print(fivenum(mtx.rna))
    mtx.rna <- asinh(mtx.rna)
-   printf("mtx.rna after asinh transform: ")
+
+   variance <- apply(mtx.rna, 1, var)
+   low.variance.genes <- which(variance < 0.25)
+   if(length(low.variance.genes) > 0)
+      mtx.rna <- mtx.rna[-low.variance.genes, , drop=FALSE]
+
+   printf("mtx.rna, %d x %d range of values after asinh transform: ", nrow(mtx.rna), ncol(mtx.rna))
    print(fivenum(mtx.rna))
+   printf("mtx.rna, range of variance after asinh transform: ")
+   print(fivenum(apply(mtx.rna, 1, var)))
+
    invisible(mtx.rna)
 
 } # readExpressionFiles
@@ -184,7 +195,6 @@ findMotifs <- function(pfms, tbl.regions, pwmMatchMinimumAsPercentage, source, d
 
    shortMotifs <- unlist(lapply(strsplit(tbl.motifs$motifName, "-"), function(tokens) tokens[length(tokens)]))
    tbl.motifs$shortMotif <- shortMotifs
-   browser()
    tbl.motifs <- associateTranscriptionFactors(MotifDb, tbl.motifs, source="MotifDb", expand.rows=TRUE)
 
    motifs.without.tfs <- which(is.na(tbl.motifs$geneSymbol))
@@ -507,53 +517,132 @@ run <- function()
 
 } # run
 #----------------------------------------------------------------------------------------------------
+modelVersion <- function(pfms, tbl.regulatoryRegions, motifMatchThreshold, mtx)
+{
+   tbl.motifsInRegulatoryRegions  <- findMotifs(pfms, tbl.regulatoryRegions, motifMatchThreshold)
+   tbl.motifs <- associateTranscriptionFactors(MotifDb, tbl.motifsInRegulatoryRegions, source="MotifDb", expand.rows=TRUE)
+   tbl.motifs$geneSymbol <- toupper(tbl.motifs$geneSymbol)
+
+   #solver.names <- c("lasso", "pearson", "randomForest", "ridge", "spearman", "sqrtlasso", "lassopv")
+   solver.names <- c("lasso", "pearson", "randomForest", "ridge", "spearman")
+   candidates <- unique(intersect(tbl.motifs$geneSymbol, rownames(mtx)))
+   save(targetGene, mtx, candidates, solver.names, file=sprintf("solver.bug.%s.RData", gsub(" ", ".", Sys.time(), fixed=TRUE)))
+   #suppressWarnings(
+      tbl.geneModel <- createGeneModel(trena, targetGene, solver.names, tbl.motifs, mtx)
+   #   )
+
+   if(nrow(tbl.geneModel) > 0)
+      tbl.geneModel <- tbl.geneModel[order(tbl.geneModel$rfScore, decreasing=TRUE),]
+
+   targetGene.tss <- with(tbl.promoters, ifelse(strand[1] == "+",
+                                                max(transcription_start_site),
+                                                min(transcription_start_site)))
+
+   tbl.motifs.strong <- subset(tbl.motifs, geneSymbol %in% tbl.geneModel$gene)
+   distance <- tbl.motifs.strong$motifStart - targetGene.tss
+   direction <- rep("upstream", length(distance))
+   direction[which(distance < 0)] <- "downstream"
+   tbl.motifs.strong$distance.from.tss <- distance
+   tbl.motifs.strong$id <- sprintf("%s.fp.%s.%06d.%s", targetGene, direction, abs(distance), tbl.motifs.strong$motifName)
+
+   list(model=tbl.geneModel, regions=tbl.motifs.strong)
+
+} # modelVersion
+#------------------------------------------------------------------------------------------------------------------------
 explore.one.gene <- function(targetGene)
 {
+   targetGene <- "TCF7"
+
    upstream=2000
    downstream=200
    motifMatchThreshold=90
+
    removeTracksByName(tv, getTrackNames(tv)[-1])
 
    tbl.promoters <- transcriptAwareProximalPromoter(targetGene, upstream, downstream)
+
+      # our standard approach is to look for binding motifs in ATAC-seq regions
+      # in proximal promoters.
+      # a useful (sometimes humbling) contrast is to ignore open chromatin,
+      # and consider all binding sites in ALL dna in the gene's TSS +/- upstream & downstream
+      # calculate the region first
+
+   strand <- tbl.promoters$strand[1]
+   targetGene.tss <- with(tbl.promoters, ifelse(strand == "+",
+                                                max(transcription_start_site),
+                                                min(transcription_start_site)))
+   targetGene.upstream <- ifelse(strand == "+", targetGene.tss - upstream, targetGene.tss + upstream)
+   targetGene.downstream <- ifelse(strand == "+", targetGene.tss + downstream, targetGene.tss - downstream)
+
+   tbl.fullRegionAllDNA <- data.frame(chrom=tbl.promoters$chromosome_name[1],
+                                      start=min(c(targetGene.upstream, targetGene.downstream)),
+                                      end=max(c(targetGene.upstream, targetGene.downstream)),
+                                      stringsAsFactors=FALSE)
+
 
       # show the whole gene
    showGenomicRegion(tv, targetGene)
    chromLoc <- parseChromLocString(getGenomicRegion(tv))
 
-      # expand view to gene +/- 100kb
-   showGenomicRegion(tv, sprintf("%s:%d-%d", chromLoc$chrom, chromLoc$start-100000, chromLoc$end+100000))
+      # expand view to gene +/- 5kb
+   showGenomicRegion(tv, sprintf("%s:%d-%d", chromLoc$chrom, chromLoc$start-5000, chromLoc$end+10000))
 
       # show promoters in this broad view
-   addBedTrackFromDataFrame(tv, "promoters", tbl.promoters[, c(2,8,9,1)], color="blue", displayMode="EXPANDED")
+   tbl.promoters.bed <- tbl.promoters[, c("chromosome_name", "promoter_start", "promoter_end", "ensembl_transcript_id")]
+   addBedTrackFromDataFrame(tv, "promoters", tbl.promoters.bed, color="blue", displayMode="EXPANDED")
 
       # survey the ATAC-seq regions across theis broad view.
    chromLoc <- parseChromLocString(getGenomicRegion(tv))
-      #   don't display each track
    tbl.regions.atac <- calculateATACregions(chrom=chromLoc$chrom, loc.start=chromLoc$start,
                                             loc.end=chromLoc$end, display=FALSE)
    tbl.regions.atac <- unique(tbl.regions.atac[, 1:3])
    addBedTrackFromDataFrame(tv, "ATAC", tbl.regions.atac, color="darkGreen", displayMode="EXPANDED")
 
+      # now zoom in on the proximal promoter region: this is where we will build the model
+   with(tbl.promoters.bed, showGenomicRegion(tv, sprintf("%s:%d-%d", chromosome_name[1],
+                                                         min(promoter_start) - 500,
+                                                         max(promoter_end) + 500)))
 
-   x <- lapply(seq_len(nrow(tbl.promoters)), function(r)
-                  buildModel(targetGene,
-                             transcript=tbl.promoters$ensembl_transcript_id[r],
-                             tbl.promoters$chrom[r],
-                             tbl.promoters$promoter_start[r],
-                             tbl.promoters$promoter_end[r],
-                             pfms,
-                             motifMatchThreshold,
-                             display=FALSE))
+   tbl.atacInPromoter <- as.data.frame(GenomicRanges::intersect(GRanges(tbl.regions.atac), GRanges(tbl.promoters.bed)))
+   colnames(tbl.atacInPromoter) <- c("chrom", "start", "end", "width", "strand")
+   addBedTrackFromDataFrame(tv, "ATAC/promoter", tbl.atacInPromoter, color="magenta", displayMode="EXPANDED")
 
-   showGenomicRegion(tv, targetGene)
-   chromLoc <- parseChromLocString(getGenomicRegion(tv))
-      # expand view to gene +/- 20kb
-   showGenomicRegion(tv, sprintf("%s:%d-%d", chromLoc$chrom, chromLoc$start-10000, chromLoc$end+10000))
-   chromLoc <- parseChromLocString(getGenomicRegion(tv))
-   model.big <- buildModel(targetGene, transcript=NA, chromLoc$chrom, chromLoc$start, chromLoc$end,
-                           pfms, motifMatchThreshold, display=FALSE)
+   pfms.jaspar <- query(query(MotifDb, "jaspar"),     "mmus")
+   pfms.jolma  <- query(query(MotifDb, "jolma2013"),  "mmus")
+   pfms.j <- as.list(c(pfms.jaspar, pfms.jolma))      # 411
 
-} # explore.prdm1
+   pfms.mus <- as.list(query(MotifDb, "mmus"))                 # 1251
+
+
+
+   mtx.early <- mtx.rna[, 1:19]
+   variance.early <- apply(mtx.early, 1, var)
+   early.genes.low.variance <- which(variance.early < 0.1)
+   if(length(early.genes.low.variance) > 0)
+      mtx.early <- mtx.early[-early.genes.low.variance,,drop=FALSE]
+   mtx.late  <- mtx.rna[, 20:38]
+   variance.late <- apply(mtx.late, 1, var)
+   late.genes.low.variance <- which(variance.late < 0.1)
+   if(length(late.genes.low.variance) > 0)
+      mtx.late <- mtx.late[-late.genes.low.variance,,drop=FALSE]
+
+   models <- list()
+   models[["allMousePFMs97"]] <- modelVersion(pfms.mus, tbl.atacInPromoter, 97, mtx.rna)
+   models[["allMousePFMs90"]] <- modelVersion(pfms.mus, tbl.atacInPromoter, 90, mtx.rna)
+   models[["JMousePFMs90"]] <- modelVersion(pfms.j, tbl.atacInPromoter, 90, mtx.rna)
+   models[["allMousePFMs-90-early"]] <- modelVersion(pfms.mus, tbl.atacInPromoter, 90, mtx.early)
+   models[["allMousePFMs-90-late"]] <- modelVersion(pfms.mus, tbl.atacInPromoter, 90, mtx.late)
+   models[["allDNAmousePFMs90"]] <- modelVersion(pfms.mus, tbl.fullRegionAllDNA, 90, mtx.rna)
+
+   g <- buildMultiModelGraph(tv, targetGene, models)
+
+   xCoordinate.span <- 1500
+   g.lo <- addGeneModelLayout(tv, g, xPos.span=xCoordinate.span)
+   setGraph(tv, g.lo, names(models))
+   setStyle(tv, "style.js")
+   fit(tv)
+
+} # explore.one.gene
 #----------------------------------------------------------------------------------------------------
 if(!exists("tbl.network"))
    tbl.network <- readHamidsTCellNetwork()

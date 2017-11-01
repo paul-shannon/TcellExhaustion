@@ -29,11 +29,11 @@ vizmap = [
        "background-color": "beige"
        }},
 
-   {selector: "node[type='TF'][pearsoncoeff>0]", css: {
+   {selector: "node[type='TF'][pearsonCoeff>0]", css: {
       "shape": "ellipse",
-      "background-color": "mapData(pearsoncoeff, 0, 1.0, white, red)",
-      "width": "mapData(rfscore, 0.0, 50.0, 20.0, 200.0)",
-      "height":"mapData(rfscore, 0.0, 50.0, 20.0, 200.0)"
+      "background-color": "mapData(pearsonCoeff, 0, 1.0, white, red)",
+      "width": "mapData(rfScore, 0.0, 50.0, 20.0, 200.0)",
+      "height":"mapData(rfScore, 0.0, 50.0, 20.0, 200.0)"
        }},
 
    {selector: "node[type='targetGene']", css: {
@@ -43,11 +43,11 @@ vizmap = [
       "height": 100
        }},
 
-   {selector: "node[type='TF'][pearsoncoeff<=0]", css: {
+   {selector: "node[type='TF'][pearsonCoeff<=0]", css: {
       "shape": "ellipse",
-      "background-color": "mapData(pearsoncoeff, -1.0, 0, green, white)",
-      "width": "mapData(rfscore, 0.0, 50.0, 20.0, 200.0)",
-      "height":"mapData(rfscore, 0.0, 50.0, 20.0, 200.0)"
+      "background-color": "mapData(pearsonCoeff, -1.0, 0, green, white)",
+      "width": "mapData(rfScore, 0.0, 50.0, 20.0, 200.0)",
+      "height":"mapData(rfScore, 0.0, 50.0, 20.0, 200.0)"
        }},
 
    {selector: "node[type='tf']", css: {
