@@ -278,7 +278,7 @@ modelWithParameters <- function(pfms, tbl.regulatoryRegions, motifMatchThreshold
    #solver.names <- c("lasso", "pearson", "randomForest", "ridge", "spearman", "sqrtlasso", "lassopv")
    solver.names <- c("lasso", "pearson", "randomForest", "ridge", "spearman")
    candidates <- unique(intersect(tbl.motifs$geneSymbol, rownames(mtx)))
-   save(targetGene, mtx, candidates, solver.names, file=sprintf("solver.bug.%s.RData", gsub(" ", ".", Sys.time(), fixed=TRUE)))
+   #save(targetGene, mtx, candidates, solver.names, file=sprintf("solver.bug.%s.RData", gsub(" ", ".", Sys.time(), fixed=TRUE)))
    #suppressWarnings(
       tbl.geneModel <- createGeneModel(trena, targetGene, solver.names, tbl.motifs, mtx)
    #   )
