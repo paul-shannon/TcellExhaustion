@@ -10,7 +10,7 @@ library(RUnit)
 printf <- function(...) print(noquote(sprintf(...)))
 #--------------------------------------------------------------------------------
 stopifnot(packageVersion("trena")    >= "0.99.192")
-stopifnot(packageVersion("trenaViz") >= "0.99.24")
+stopifnot(packageVersion("trenaViz") >= "0.99.25")
 stopifnot(packageVersion("MotifDb")  >= "1.19.18")
 
 if(!exists("trena"))
@@ -365,9 +365,8 @@ demo <- function()
 
    pfms.mus <- as.list(query(MotifDb, "mmus"))                 # 1251
 
-      # a (probably) unscientific experiment
-      # build separate models, though data is sparse, from an un-nuanced division
-      # into early and late expression
+     # an ad hoc experiment: build separate models, though data is sparse, from
+     # an un-nuanced division into early and late expression
 
    mtx.early <- mtx.rna[, 1:19]
    variance.early <- apply(mtx.early, 1, var)
