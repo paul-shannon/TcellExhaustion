@@ -9,8 +9,8 @@ library(RUnit)
 #--------------------------------------------------------------------------------
 printf <- function(...) print(noquote(sprintf(...)))
 #--------------------------------------------------------------------------------
-stopifnot(packageVersion("trena")    >= "0.99.192")
-stopifnot(packageVersion("trenaViz") >= "0.99.25")
+stopifnot(packageVersion("trena")    >= "1.1.5")
+stopifnot(packageVersion("trenaViz") >= "0.99.30")
 stopifnot(packageVersion("MotifDb")  >= "1.19.18")
 
 if(!exists("trena"))
@@ -303,7 +303,10 @@ modelWithParameters <- function(pfms, tbl.regulatoryRegions, motifMatchThreshold
 #------------------------------------------------------------------------------------------------------------------------
 demo <- function()
 {
-   targetGene <- "TCF7"
+   targetGene <- "TCF7"   #  "chr11:52,252,197-52,283,143"   by eye
+                          #  "chr11:52,252,283-52,283,014"   ncbi
+                          #  "chr11:52,249,751-52,285,268"   with some padding up and downstream
+   targetGene.chromLoc <- "chr11:52,252,283-52,283,014"
 
    upstream=2000
    downstream=200
@@ -333,7 +336,9 @@ demo <- function()
 
 
       # show the whole gene
-   showGenomicRegion(tv, targetGene)
+   showGenomicRegion(tv, targetGene.chromLoc)
+   # showGenomicRegion(tv, targetGene)
+
    chromLoc <- parseChromLocString(getGenomicRegion(tv))
 
       # expand view to gene +/- 5kb
@@ -341,6 +346,9 @@ demo <- function()
 
       # show promoters in this broad view
    tbl.promoters.bed <- tbl.promoters[, c("chromosome_name", "promoter_start", "promoter_end", "ensembl_transcript_id")]
+
+      # odd igv bug: the last row is dropped.  put it in there twice for now....
+   tbl.promoters.bed <- rbind(tbl.promoters.bed, tbl.promoters.bed[nrow(tbl.promoters.bed),])
    addBedTrackFromDataFrame(tv, "promoters", tbl.promoters.bed, color="blue", displayMode="EXPANDED")
 
       # survey the ATAC-seq regions across theis broad view.
@@ -348,6 +356,8 @@ demo <- function()
    tbl.regions.atac <- calculateATACregions(chrom=chromLoc$chrom, loc.start=chromLoc$start,
                                             loc.end=chromLoc$end, display=FALSE)
    tbl.regions.atac <- unique(tbl.regions.atac[, 1:3])
+   tbl.regions.atac <- rbind(tbl.regions.atac, tbl.regions.atac[nrow(tbl.regions.atac),])
+
    addBedTrackFromDataFrame(tv, "ATAC", tbl.regions.atac, color="darkGreen", displayMode="EXPANDED")
 
       # now zoom in on the proximal promoter region: this is where we will build the model
@@ -357,6 +367,7 @@ demo <- function()
 
    tbl.atacInPromoter <- as.data.frame(GenomicRanges::intersect(GRanges(tbl.regions.atac), GRanges(tbl.promoters.bed)))
    colnames(tbl.atacInPromoter) <- c("chrom", "start", "end", "width", "strand")
+   tbl.atacInPromoter <- rbind(tbl.atacInPromoter, tbl.atacInPromoter[nrow(tbl.atacInPromoter),])
    addBedTrackFromDataFrame(tv, "ATAC/promoter", tbl.atacInPromoter, color="magenta", displayMode="EXPANDED")
 
    pfms.jaspar <- query(query(MotifDb, "jaspar"),     "mmus")
@@ -379,6 +390,9 @@ demo <- function()
    if(length(late.genes.low.variance) > 0)
       mtx.late <- mtx.late[-late.genes.low.variance,,drop=FALSE]
 
+      # undo the last-row duplication, that temporary hack, before using those
+      # regions to look for motifs, and build models
+    tbl.atacInPromoter <- unique(tbl.atacInPromoter)
       # now create six models with various combinations of pfms, regulatory regions,
       # pfm match threshold, expression matrices
 
