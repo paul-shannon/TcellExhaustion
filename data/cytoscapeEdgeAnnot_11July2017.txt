@@ -1,4 +1,4 @@
-Source	Target	Reference	edgeType	pos2NaiveScores	neg2NaiveScores	tex2NaiveScores	acute2NaiveScores	tex2AcuteScores	pos2NegScores
+source	target	Reference	interaction	pos2NaiveScores	neg2NaiveScores	tex2NaiveScores	acute2NaiveScores	tex2AcuteScores	pos2NegScores
 AKT1	BACH2	Roychoudhuri et al, 2016, BACH2 regulates CD8+ T cell differentiation by controlling access of AP-1 factors to enhancers. 	inhibits	1	1	0	0	0	1
 AKT1	FOXO1	Calnan, The FoxO code, 2008.. Hedrick et al, FOXO transcription factors throughout T cell biology. Hedrick et al, FOXO transcription factors throughout T cell biology	inhibits	1	1	0	0	0	0.789
 AKT1	MTOR	van der Widnt & Pearce, Metabolic switching and fuel choice during T-cell differentiation and memory development	promotes	0	0.231	0.562	0.607	0.393	0.474
