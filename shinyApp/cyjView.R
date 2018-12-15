@@ -2,7 +2,7 @@ library(cyjShiny)
 #----------------------------------------------------------------------------------------------------
 readHamidsTCellNetwork <- function()
 {
-   tbl <- read.table("data/cytoscapeEdgeAnnot_11July2017.txt", sep="\t", header=TRUE, as.is=TRUE)
+   tbl <- read.table("cytoscapeEdgeAnnot_11July2017.txt", sep="\t", header=TRUE, as.is=TRUE)
    tbl.xtab <- as.data.frame(table(c(tbl$Source, tbl$Target)))
    tbl.xtab <- tbl.xtab[order(tbl.xtab$Freq, decreasing=TRUE),]
    head(tbl.xtab)
@@ -14,13 +14,18 @@ readHamidsTCellNetwork <- function()
 
 } # readHamidsTCellNetwork
 #----------------------------------------------------------------------------------------------------
-styleList <- c("", "Yeast-Galactose"="yeastGalactoseStyle.js", "style.js")
+styleList <- c("",
+               "cancer 21jul2017" = "received.15dec2018/styleCancer_21July2017.js",
+               "generic style" = "style.js")
+
 condition <- c("", "gal1RGexp", "gal4RGexp", "gal80Rexp")
 tbl.edges <- readHamidsTCellNetwork()
 tbl.dumb <- data.frame(source="A", target="B", interaction="simple", stringsAsFactors=FALSE)
 tbl.dumb <- tbl.edges[1:3, c("source", "target", "interaction")]
 graph <- dataFramesToJSON(tbl.edges)
 all.nodes <- sort(unique(c(tbl.edges$source, tbl.edges$target)))
+load("received.15dec2018/layout.RData")
+tbl.hamidsCuratedLayout <- tbl.layout
 #----------------------------------------------------------------------------------------------------
 ui = shinyUI(fluidPage(
 
@@ -33,6 +38,7 @@ ui = shinyUI(fluidPage(
           selectInput("loadStyleFile", "Select Style: ", choices=styleList),
           selectInput("doLayout", "Select Layout:",
                       choices=c("",
+                                "Hamid's curated layout",
                                 "cose",
                                 "cola",
                                 "circle",
@@ -48,16 +54,16 @@ ui = shinyUI(fluidPage(
           actionButton("sfn", "Select First Neighbor"),
           actionButton("fit", "Fit Graph"),
           actionButton("fitSelected", "Fit Selected"),
-          actionButton("clearSelection", "Unselect Nodes"),
+          actionButton("clearSelection", "Deselect Nodes"),
           HTML("<br>"),
           actionButton("loopConditions", "Loop Conditions"),
           HTML("<br>"),
           actionButton("getSelectedNodes", "Get Selected Nodes"),
           HTML("<br><br>"),
           htmlOutput("selectedNodesDisplay"),
-          width=3
+          width=2
       ),
-      mainPanel(cyjShinyOutput('cyjShiny', height=800), width=9
+      mainPanel(cyjShinyOutput('cyjShiny', height=800), width=10
       )
   ) # sidebarLayout
 ))
@@ -78,20 +84,23 @@ server = function(input, output, session)
        })
 
     observeEvent(input$loadStyleFile,  ignoreInit=TRUE, {
-      showModal(modalDialog("load style file"))
-      #if(input$loadStyleFile != "")
-      #   tryCatch({
-      #      loadStyleFile(input$loadStyleFile)
-      #      }, warning=function(e){
-      #           printf("loadStyleFile warning: %s", e$message)
-      #           showModal(modalDialog(title="cyjShiny error", e$message))
-      #           }
-      #         )
+      if(input$loadStyleFile != "")
+         tryCatch({
+            loadStyleFile(input$loadStyleFile)
+            }, error=function(e){
+                 printf("loadStyleFile warning: %s", e$message)
+                 showModal(modalDialog(title="cyjShiny error", e$message))
+                 }
+               )
        })
 
     observeEvent(input$doLayout,  ignoreInit=TRUE,{
        strategy <- input$doLayout
-       doLayout(session, strategy)
+       if(strategy == "Hamid's curated layout"){
+          setNodePositions(session, tbl.hamidsCuratedLayout)
+       } else {
+          doLayout(session, strategy)
+          }
        })
 
     observeEvent(input$selectName,  ignoreInit=TRUE,{

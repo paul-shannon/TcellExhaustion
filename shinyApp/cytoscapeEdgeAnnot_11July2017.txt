@@ -1,0 +1,595 @@
+source	target	Reference	interaction	pos2NaiveScores	neg2NaiveScores	tex2NaiveScores	acute2NaiveScores	tex2AcuteScores	pos2NegScores
+AKT1	BACH2	Roychoudhuri et al, 2016, BACH2 regulates CD8+ T cell differentiation by controlling access of AP-1 factors to enhancers. 	inhibits	1	1	0	0	0	1
+AKT1	FOXO1	Calnan, The FoxO code, 2008.. Hedrick et al, FOXO transcription factors throughout T cell biology. Hedrick et al, FOXO transcription factors throughout T cell biology	inhibits	1	1	0	0	0	0.789
+AKT1	MTOR	van der Widnt & Pearce, Metabolic switching and fuel choice during T-cell differentiation and memory development	promotes	0	0.231	0.562	0.607	0.393	0.474
+AKT1	PPARGC1A	Schrping, 2016, The Tumor Microenvironment Represses T Cell Mitochondrial Biogenesis to Drive Intratumoral T Cell Metabolic Insufficiency and Dysfunction	inhibits	0.846	0.846	0.5	0.643	0.607	0.263
+AKT1	SLC2A1	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0.385	0.769	0.438	0.571	0.714	0.474
+AKT1	SLC2A2	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0	0	0.438	0.286	0.5	0
+AKT1	SLC2A3	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0.077	0.923	0.312	0.5	0.571	1
+AKT1	SLC2A4	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0	0	0.5	0.571	0.464	0
+AKT1	SLC2A5	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0	0	0	0	0	0
+AKT2	BACH2	Roychoudhuri et al, 2016, BACH2 regulates CD8+ T cell differentiation by controlling access of AP-1 factors to enhancers. 	inhibits	0.538	0.538	0	0	0	0.368
+AKT2	FOXO1	Calnan, The FoxO code, 2008.. Hedrick et al, FOXO transcription factors throughout T cell biology. Hedrick et al, FOXO transcription factors throughout T cell biology	inhibits	0.538	0.538	0	0	0	0.158
+AKT2	MTOR	van der Widnt & Pearce, Metabolic switching and fuel choice during T-cell differentiation and memory development	promotes	0.462	0.385	0	0	0	0.789
+AKT2	PPARGC1A	Schrping, 2016, The Tumor Microenvironment Represses T Cell Mitochondrial Biogenesis to Drive Intratumoral T Cell Metabolic Insufficiency and Dysfunction	inhibits	0.385	0.538	0	0	0	0.474
+AKT2	SLC2A1	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0.846	0.462	0	0	0	0.789
+AKT2	SLC2A2	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0	0	0	0	0	0
+AKT2	SLC2A3	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0.538	0.615	0	0	0	0.368
+AKT2	SLC2A4	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0	0	0	0	0	0
+AKT2	SLC2A5	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0	0	0	0	0	0
+AKT3	BACH2	Roychoudhuri et al, 2016, BACH2 regulates CD8+ T cell differentiation by controlling access of AP-1 factors to enhancers. 	inhibits	0	0	0	0	0	0.421
+AKT3	FOXO1	Calnan, The FoxO code, 2008.. Hedrick et al, FOXO transcription factors throughout T cell biology. Hedrick et al, FOXO transcription factors throughout T cell biology	inhibits	0	0	0	0	0	0.526
+AKT3	MTOR	van der Widnt & Pearce, Metabolic switching and fuel choice during T-cell differentiation and memory development	promotes	1	0.769	0	0	0	0.211
+AKT3	PPARGC1A	Schrping, 2016, The Tumor Microenvironment Represses T Cell Mitochondrial Biogenesis to Drive Intratumoral T Cell Metabolic Insufficiency and Dysfunction	inhibits	0.154	0.154	0	0	0	0.105
+AKT3	SLC2A1	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0.615	0.231	0	0	0	0.211
+AKT3	SLC2A2	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0	0	0	0	0	0
+AKT3	SLC2A3	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0.923	0.077	0	0	0	0.421
+AKT3	SLC2A4	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0	0	0	0	0	0
+AKT3	SLC2A5	Frauwirth et al, 2002, The CD28 Signaling Pathway Regulates Glucose Metabolism	promotes	0	0	0	0	0	0
+BACH2	GATA3	Jhou et al, 2016, The Bach Family of Transcription Factors: A Comprehensive Review	inhibits	0	0.615	0	0	0	0.842
+BACH2	ID3	Jhou et al, 2016, The Bach Family of Transcription Factors: A Comprehensive Review	inhibits	0.923	0	0	0	0	0.053
+BACH2	JUN	Jhou et al, 2016, The Bach Family of Transcription Factors: A Comprehensive Review	inhibits	0.077	0.077	0	0	0	0.053
+BACH2	JUNB	Roychoudhuri et al, 2016, BACH2 regulates CD8+ T cell differentiation by controlling access of AP-1 factors to enhancers. Jhou et al, 2016, The Bach Family of Transcription Factors: A Comprehensive Review	inhibits	0.538	0.615	0	0	0	0
+BACH2	JUND	Roychoudhuri et al, 2016, BACH2 regulates CD8+ T cell differentiation by controlling access of AP-1 factors to enhancers. Jhou et al, 2016, The Bach Family of Transcription Factors: A Comprehensive Review	inhibits	0.077	0.308	0	0	0	0.684
+BACH2	PRDM1	Ochiai et al, 2008, Regulation of the plasma cell transcription factor Blimp-1 gene by Bach2 and Bcl6. Jhou et al, 2016, The Bach Family of Transcription Factors: A Comprehensive Review	inhibits	1	1	0	0	0	0.947
+BATF	BCL6	Ise et al, 2011, The transcription factor BATF controls the global regulators of classswitch recombination in both B cells and T cells	promotes	0.615	0	0.5	0.179	0.679	0.947
+BATF	PRDM1	Xin et al, A Critical Role of IL-21-Induced BATF in Sustaining CD8-T-Cell-Mediated Chronic Viral Control	promotes	1	1	1	0.857	0.714	0.053
+BATF	EOMES	Karuchi et al, 2014, The transcription factor BATF operates as an essential differentiation checkpoint in early effector CD8+ T cells	promotes	0.923	0.923	1	0.929	0.714	0.947
+BATF	IRF4	Karuchi et al, 2014, The transcription factor BATF operates as an essential differentiation checkpoint in early effector CD8+ T cells	inhibits	0	0	0.188	0.5	0.179	0.737
+BATF	NFATC2	Karuchi et al, 2014, The transcription factor BATF operates as an essential differentiation checkpoint in early effector CD8+ T cells	promotes	0.077	0.538	0.625	0.464	0.571	0.632
+BATF	NFKB1	Karuchi et al, 2014, The transcription factor BATF operates as an essential differentiation checkpoint in early effector CD8+ T cells	promotes	0	0	0.188	0.143	0.429	0.842
+BATF	RUNX3	Karuchi et al, 2014, The transcription factor BATF operates as an essential differentiation checkpoint in early effector CD8+ T cells	promotes	0	0.538	0	0	0	0.158
+BATF	TBX21	Karuchi et al, 2014, The transcription factor BATF operates as an essential differentiation checkpoint in early effector CD8+ T cells	promotes	0	0	0	0	0	0
+BCL6	GZMB	Yoshida et al, 2006, Bcl6 controls granzyme B expression in effector CD8A+ T cells 	inhibits	0.385	1	0.5	0.821	0.429	1
+BCL6	ID2	Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	inhibits	0.385	1	0.5	0.821	0.536	1
+BCL6	LEF1	Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	promotes	0	0	0.5	0.821	0.25	0
+BCL6	PRDM1	Vasanwala et al,  Repression of AP-1 function: a mechanism for the regulation of Blimp-1 expression and B lymphocyte differentiation by the B cell lymphoma-6 protooncogene. Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	inhibits	0.385	1	0.5	0.75	0.321	1
+BCL6	TCF7	Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	promotes	0.385	1	0.5	0.679	0.536	1
+BTLA	AKT1	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.231	1	0	0	0	1
+BTLA	AKT2	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.385	0.538	0	0	0	0.368
+BTLA	AKT3	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.769	0	0	0	0	0.421
+BTLA	NFKB1	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.769	0	0	0	0	0.158
+BTLA	NFKB2	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.385	0.462	0	0	0	0.053
+BTLA	PIK3CA	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.769	0.462	0	0	0	0.421
+BTLA	PIK3CB	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.769	0	0	0	0	0.526
+BTLA	PIK3CG	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.538	0.923	0	0	0	0.947
+BTLA	PRKCQ	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.769	0.077	0	0	0	0.263
+BTLA	REL	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	promotes	0.846	0.462	0	0	0	0.895
+BTLA	RELA	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.769	0.615	0	0	0	0.316
+BTLA	RELB	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.615	0.462	0	0	0	0
+CA	NFATC1	Macian, 2006, NFAT PROTEINS: KEY REGULATORS OF T?CELL DEVELOPMENT AND FUNCTION	promotes	0	0	0	0	0	0
+CA	NFATC2	Macian, 2006, NFAT PROTEINS: KEY REGULATORS OF T?CELL DEVELOPMENT AND FUNCTION	promotes	0	0	0	0	0	0
+CD160	IFNG	Vigano et al, 2014, CD160-Associated CD8 T-Cell Functional Impairment Is Independent of PD-1 Expression	inhibits	0	0	0	0	0.571	0
+CD160	IL2	Vigano et al, 2014, CD160-Associated CD8 T-Cell Functional Impairment Is Independent of PD-1 Expression	inhibits	0	0	0.438	0.429	0.429	0
+CD244	CA	Maghazachi, 2005, Insights into Seven and Single Transmembrane-Spanning Domain Receptors and Their Signaling Pathways in Human Natural Killer Cells	promotes	0	0	0	0	0	0
+CD244	MAPK1	Maghazachi, 2005, Insights into Seven and Single Transmembrane-Spanning Domain Receptors and Their Signaling Pathways in Human Natural Killer Cells	promotes	0.692	0.308	0.125	0.571	0.179	0.316
+CD244	MAPK3	Maghazachi, 2005, Insights into Seven and Single Transmembrane-Spanning Domain Receptors and Their Signaling Pathways in Human Natural Killer Cells	promotes	0	0	0	0	0	0
+CD244	NFATC1	Maghazachi, 2005, Insights into Seven and Single Transmembrane-Spanning Domain Receptors and Their Signaling Pathways in Human Natural Killer Cells	promotes	0.692	0.846	1	0.429	0.964	0.842
+CD244	NFATC2	Maghazachi, 2005, Insights into Seven and Single Transmembrane-Spanning Domain Receptors and Their Signaling Pathways in Human Natural Killer Cells	promotes	0.077	0.538	0.625	0.464	0.571	0.368
+CD244	NFKB1	Kwon et al, 2015, Stepwise phosphorylation of p65 promotes NF-kB activation and NK cell responses during target cell recognition	promotes	0	0	0.188	0.429	0.286	0.158
+CD244	NFKB2	Kwon et al, 2015, Stepwise phosphorylation of p65 promotes NF-kB activation and NK cell responses during target cell recognition	promotes	0.846	0.462	0.625	0.5	0.643	0.053
+CD244	REL	Kwon et al, 2015, Stepwise phosphorylation of p65 promotes NF-kB activation and NK cell responses during target cell recognition	promotes	0.615	0.538	0.625	0.464	0.536	0.105
+CD244	RELA	Kwon et al, 2015, Stepwise phosphorylation of p65 promotes NF-kB activation and NK cell responses during target cell recognition	promotes	0	0.615	0.062	0.5	0.107	0.316
+CD244	RELB	Kwon et al, 2015, Stepwise phosphorylation of p65 promotes NF-kB activation and NK cell responses during target cell recognition	promotes	0.154	0.462	0.625	0.429	0.643	0
+CD247	AKT1	Genot et al, The T-Cell Receptor Regulates Akt (Protein Kinase B) via a Pathway Involving Rac1 and Phosphatidylinositide 3-Kinase	promotes	0.077	0.077	0.75	0.607	0.821	1
+CD247	AKT2	Genot et al, The T-Cell Receptor Regulates Akt (Protein Kinase B) via a Pathway Involving Rac1 and Phosphatidylinositide 3-Kinase	promotes	0.538	0.538	0	0	0	0.368
+CD247	AKT3	Genot et al, The T-Cell Receptor Regulates Akt (Protein Kinase B) via a Pathway Involving Rac1 and Phosphatidylinositide 3-Kinase	promotes	0.923	0.923	0	0	0	0.421
+CD247	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	1	0.615	0.25	0.536	0.393	0.526
+CD247	FOS	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0.385	0.769	0	0	0	0.211
+CD247	JUN	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	1	1	0.625	0.286	0.571	0.053
+CD247	JUNB	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0.538	0.462	0.562	0.393	0.607	0
+CD247	JUND	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	1	0.769	0.438	0.321	0.393	0.684
+CD247	NFATC1	Macian, 2006, NFAT PROTEINS: KEY REGULATORS OF T?CELL DEVELOPMENT AND FUNCTION	promotes	0.385	0.231	0.062	0.607	0.143	0.842
+CD247	NFATC2	Macian, 2006, NFAT PROTEINS: KEY REGULATORS OF T?CELL DEVELOPMENT AND FUNCTION	promotes	1	0.538	0.312	0.357	0.321	0.368
+CD247	NFKB1	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0.923	0.923	0.875	0.536	0.75	0.158
+CD247	NFKB2	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0.231	0.462	0.312	0.464	0.393	0.053
+CD247	REL	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0.308	0.385	0.312	0.429	0.429	0.105
+CD247	RELA	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0.923	0.462	1	0.607	0.857	0.316
+CD247	RELB	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0.769	0.462	0.312	0.464	0.321	0
+CD247	ZAP70	Muller and Rao, 2008, NFAT, immunity and cancer: a transcription factor comes of age	promotes	0	0	0.312	0.607	0.357	0
+CD274	ZAP70	Xia et al, 2015, Signaling pathway and dysregulation of PD1 and its ligands in lymphoid malignancies	inhibits	0	0	0	0	0	0
+CD28	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.077	0.692	0.438	0.25	0.107	0.579
+CD28	HRAS	Chen and Flies, 2013, Molecular mechanisms of T cell costimulation and coinhibition	promotes	1	0.462	0	0	0	0.211
+CD28	KRAS	Chen and Flies, 2013, Molecular mechanisms of T cell costimulation and coinhibition	promotes	0	0.462	0.375	0.643	0.643	0.632
+CD28	NFKB1	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0	0.385	0.438	0.536	0.679	0.842
+CD28	NRAS	Chen and Flies, 2013, Molecular mechanisms of T cell costimulation and coinhibition	promotes	0	0.462	0.312	0.393	0.464	0.211
+CD28	PIK3CA	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0	0.846	0.438	0.5	0.643	0.579
+CD28	PIK3CB	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0	0.385	0	0	0	0.579
+CD28	PIK3CG	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.385	0.692	0	0	0	0.158
+CD28	PRKCQ	Dustin, PKC-?: hitting the bull’s eye, 20011. Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0	0.308	0.375	0.5	0.643	0.737
+CD28	RELA	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0	0.846	0.312	0.75	0.714	0.684
+CD3D	AKT1	Genot et al, The T-Cell Receptor Regulates Akt (Protein Kinase B) via a Pathway Involving Rac1 and Phosphatidylinositide 3-Kinase	promotes	0	0	0.688	0.75	0.714	0
+CD3D	AKT2	Genot et al, The T-Cell Receptor Regulates Akt (Protein Kinase B) via a Pathway Involving Rac1 and Phosphatidylinositide 3-Kinase	promotes	0	0	0	0	0	0
+CD3D	AKT3	Genot et al, The T-Cell Receptor Regulates Akt (Protein Kinase B) via a Pathway Involving Rac1 and Phosphatidylinositide 3-Kinase	promotes	0	0	0	0	0	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.679	0.429	0
+CD3D	FOS	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0	0	0	0	0	0
+CD3D	JUN	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0	0	0.438	0.5	0.607	0
+CD3D	JUNB	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0	0	0.5	0.75	0.643	0
+CD3D	JUND	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0	0	0.25	0.464	0.429	0
+CD3D	NFATC1	Macian, 2006, NFAT PROTEINS: KEY REGULATORS OF T?CELL DEVELOPMENT AND FUNCTION	promotes	0	0	0.25	0.464	0.25	0
+CD3D	NFATC2	Macian, 2006, NFAT PROTEINS: KEY REGULATORS OF T?CELL DEVELOPMENT AND FUNCTION	promotes	0	0	0.25	0.571	0.357	0
+CD3D	NFKB1	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0	0	0.938	0.179	0.929	0
+CD3D	NFKB2	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0	0	0.25	0.679	0.357	0
+CD3D	REL	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0	0	0.125	0.357	0.25	0
+CD3D	RELA	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0	0	0.812	0.536	0.821	0
+CD3D	RELB	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0	0	0.25	0.75	0.286	0
+CD3D	ZAP70	Muller and Rao, 2008, NFAT, immunity and cancer: a transcription factor comes of age	promotes	0	0	0.5	0.536	0.464	0
+CD3E	AKT1	Genot et al, The T-Cell Receptor Regulates Akt (Protein Kinase B) via a Pathway Involving Rac1 and Phosphatidylinositide 3-Kinase	promotes	0	0	0.438	0.607	0.464	0
+CD3E	AKT2	Genot et al, The T-Cell Receptor Regulates Akt (Protein Kinase B) via a Pathway Involving Rac1 and Phosphatidylinositide 3-Kinase	promotes	0	0	0	0	0	0
+CD3E	AKT3	Genot et al, The T-Cell Receptor Regulates Akt (Protein Kinase B) via a Pathway Involving Rac1 and Phosphatidylinositide 3-Kinase	promotes	0	0	0	0	0	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.438	0.607	0.393	0
+CD3E	FOS	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0	0	0	0	0	0
+CD3E	JUN	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0	0	0.062	0.571	0.357	0
+CD3E	JUNB	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0	0	0.625	0.607	0.464	0
+CD3E	JUND	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0	0	0.75	0.536	0.536	0
+CD3E	NFATC1	Macian, 2006, NFAT PROTEINS: KEY REGULATORS OF T?CELL DEVELOPMENT AND FUNCTION	promotes	0	0	0.75	0.607	0.714	0
+CD3E	NFATC2	Macian, 2006, NFAT PROTEINS: KEY REGULATORS OF T?CELL DEVELOPMENT AND FUNCTION	promotes	0	0	0.375	0.429	0.393	0
+CD3E	NFKB1	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0	0	0.438	0.179	0.464	0
+CD3E	NFKB2	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0	0	0.375	0.607	0.393	0
+CD3E	REL	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0	0	0.375	0.5	0.357	0
+CD3E	RELA	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0	0	0.312	0.464	0.286	0
+CD3E	RELB	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0	0	0.375	0.536	0.393	0
+CD3E	ZAP70	Muller and Rao, 2008, NFAT, immunity and cancer: a transcription factor comes of age	promotes	0	0	1	0.679	0.929	0
+CD3G	AKT1	Genot et al, The T-Cell Receptor Regulates Akt (Protein Kinase B) via a Pathway Involving Rac1 and Phosphatidylinositide 3-Kinase	promotes	0	0.923	0.375	0.321	0.643	0.947
+CD3G	AKT2	Genot et al, The T-Cell Receptor Regulates Akt (Protein Kinase B) via a Pathway Involving Rac1 and Phosphatidylinositide 3-Kinase	promotes	0.462	0.615	0	0	0	0.316
+CD3G	AKT3	Genot et al, The T-Cell Receptor Regulates Akt (Protein Kinase B) via a Pathway Involving Rac1 and Phosphatidylinositide 3-Kinase	promotes	1	0.077	0	0	0	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0.923	0.385	0.375	0.464	0.357	0.474
+CD3G	FOS	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0.308	0.385	0	0	0	0.263
+CD3G	JUN	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0.923	0.154	0.125	0.286	0.321	0.105
+CD3G	JUNB	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0.462	0.692	0.438	0.107	0.429	0.053
+CD3G	JUND	Ricon & Flavell, AP-1 transcriptional activity requires both T-cell receptor-mediated and co-stimulatory signals in primary T lymphocytes	promotes	0.923	0.385	0.562	0.321	0.429	0.737
+CD3G	NFATC1	Macian, 2006, NFAT PROTEINS: KEY REGULATORS OF T?CELL DEVELOPMENT AND FUNCTION	promotes	0.308	0.923	0.562	0.679	0.679	0.789
+CD3G	NFATC2	Macian, 2006, NFAT PROTEINS: KEY REGULATORS OF T?CELL DEVELOPMENT AND FUNCTION	promotes	0.923	0.615	0.188	0.286	0.286	0.316
+CD3G	NFKB1	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	1	0.077	0.625	0.893	0.643	0.211
+CD3G	NFKB2	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0.154	0.538	0.312	0.107	0.429	0
+CD3G	REL	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0.385	0.615	0.312	0.5	0.321	0.053
+CD3G	RELA	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	1	0.692	0.5	0.464	0.464	0.368
+CD3G	RELB	Thaker et al, TCR and CD28 activate the transcription factor NF-?B in T-cells via distinct adaptor signaling complexes	promotes	0.846	0.538	0.312	0.179	0.286	0.053
+CD3G	ZAP70	Muller and Rao, 2008, NFAT, immunity and cancer: a transcription factor comes of age	promotes	0	0	0.812	0.607	0.893	0
+CD8A	CD247	Wang et al, 2009, A Conserved CXXC Motif in CD3e Is Critical for T Cell Development and TCR Signaling	promotes	0	0	0.938	0.607	0.821	0
+CD8A	CD3D	Wang et al, 2009, A Conserved CXXC Motif in CD3e Is Critical for T Cell Development and TCR Signaling	promotes	0	0	0.75	0.25	0.714	0
+CD8A	CD3E	Wang et al, 2009, A Conserved CXXC Motif in CD3e Is Critical for T Cell Development and TCR Signaling	promotes	0	0	0.25	0.179	0.464	0
+CD8A	CD3G	Wang et al, 2009, A Conserved CXXC Motif in CD3e Is Critical for T Cell Development and TCR Signaling	promotes	0	0	0.438	0.75	0.571	0
+CD8A	DNMT3A	Gamper et al, 2009, Identification of DNA Methyltransferase 3a as a T Cell Receptor-Induced Regulator of Th1 and Th2 Differentiation	promotes	0	0	0.312	0.5	0.286	0
+CD8A	LCK	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0	0	0.938	0.5	0.857	0
+CTLA4	AKT1	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0	0	0.812	0.429	0.714	0.421
+CTLA4	AKT2	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.462	0.462	0	0	0	0.526
+CTLA4	AKT3	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	1	1	0	0	0	0.579
+CTLA4	NFKB1	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	1	1	0.812	0.786	0.714	0.421
+CTLA4	NFKB2	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.154	0.538	0.375	0.429	0.357	0.632
+CTLA4	REL	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.385	0.462	0.375	0.464	0.464	0.579
+CTLA4	RELA	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	1	0.385	0.938	0.5	0.893	0.474
+CTLA4	RELB	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	0.846	0.538	0.375	0.5	0.357	0.579
+DNMT3A	DNMT3A	Youngblood et al, 2011, Chronic Virus Infection Enforces Demethylation of the Locus that Encodes PD-1 in Antigen-Specific CD8+ T Cells	inhibits	0	0	0	0	0	0
+DNMT3A	TCF7	Ladle et al, 2016, De novo DNA methylation by DNA methyltransferase 3a controls early effector CD8+ T-cell fate decisions following activation. Scharer et al , 2013, Global DNA methylation remodeling accompanies CD8 T cell effector function	inhibits	0.077	0.308	0.688	0.643	0.857	0.474
+DNMT3B	DNMT3A	Youngblood et al, 2011, Chronic Virus Infection Enforces Demethylation of the Locus that Encodes PD-1 in Antigen-Specific CD8+ T Cells	inhibits	0.769	0.615	0	0	0	0.316
+DNMT3L	DNMT3A	Youngblood et al, 2011, Chronic Virus Infection Enforces Demethylation of the Locus that Encodes PD-1 in Antigen-Specific CD8+ T Cells	inhibits	0.308	0.385	0	0	0	0.263
+EGR1	ID3	Bain et al, 2001, Regulation of the helixloophelix proteins, TCF3 and Id3, by the RasERK MAPK cascade	promotes	0.385	0.538	0.125	0.714	0.786	0.526
+EGR1	IL2	Skerka et al, 1995, A Regulatory Element in the Human Interleukin 2 Gene PromoterIs a Binding Site for the Zinc Finger Proteins Sp1 and EGR1	promotes	0.308	0.462	0.5	0.357	0.393	0.526
+EGR1	IL2RB	Lin et al, 1996, The ImmediateEarly Gene Product Egr1 Regulates the Human Interleukin2 Receptor bChain Promoter through Noncanonical Egr and Sp1 Binding Sites	promotes	0.308	0.462	0.625	0.464	0.5	0.526
+EGR2	GZMB	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0.077	0.385	0.062	1	0.393	1
+EGR2	ID3	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	promotes	1	0.385	0.25	1	0.786	1
+EGR2	IFNG	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0.077	0.385	0.062	1	0.679	1
+EGR2	LAG3	Martinez et al, 2015, The Transcription Factor NFAT Promotes Exhaustion of Activated CD8+ T Cells 	promotes	0.923	0.615	0.938	0.357	0.929	0.263
+EGR2	MYC	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	promotes	0.231	0.385	0.125	0.714	0.357	0.737
+EGR2	PRDM1	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0.077	0.385	0.062	0.929	0.143	1
+EGR2	TBX21	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0	0	0	0	0	0
+EGR2	TCF7	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	promotes	0.077	0.385	0.062	0.786	0.286	1
+EGR2	ZEB2	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	promotes	0.923	0.615	0	0	0	0.526
+EGR3	GZMB	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0.538	1	0	0	0	1
+EGR3	ID3	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	promotes	0.538	1	0	0	0	1
+EGR3	IFNG	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0.538	1	0	0	0	1
+EGR3	MYC	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	promotes	0.692	1	0	0	0	0.737
+EGR3	PRDM1	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0.538	1	0	0	0	1
+EGR3	TBX21	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0	0	0	0	0	0
+EGR3	TCF7	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	promotes	0.538	1	0	0	0	1
+EGR3	ZEB2	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	promotes	0.462	0	0	0	0	0.526
+Exhaustion	ZN	Singer et al, 2016, A Distinct Gene Module for Dysfunction Uncoupled from Activation in TumorInfiltrating T Cells	promotes	0	0	0	0	0	0
+EZH2	DNMT3A	Vire et al, 2006, The Polycomb group protein EZH2 directly controls DNA methylation	promotes	0.077	0.308	0.438	0.571	0.571	0.316
+EZH2	DNMT3B	Vire et al, 2006, The Polycomb group protein EZH2 directly controls DNA methylation	promotes	0.846	0.923	0	0	0	0.421
+EZH2	DNMT3L	Vire et al, 2006, The Polycomb group protein EZH2 directly controls DNA methylation	promotes	0.385	0.231	0	0	0	0.211
+FOS	IFNG	Lee et al, A Distal Enhancer in the Interferon-  (IFN- ) Locus Revealed by Genome Sequence Comparison	promotes	0.692	0.308	0	0	0	0.263
+FOS	IL2	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0.692	0.462	0	0	0	0.737
+FOS	IL2RB	Liao et al, 2013, Interleukin2 at the Crossroads of Effector Responses, Tolerance, and Immunotherapy	promotes	0.692	0.308	0	0	0	0.211
+FOS	PDCD1	Bally et al, 2016, Genetic and Epigenetic Regulation of PDCD1 Expression 	promotes	0.692	0.308	0	0	0	0.158
+FOS	PRDM1	Vasanwala et al,  Repression of AP-1 function: a mechanism for the regulation of Blimp-1 expression and B lymphocyte differentiation by the B cell lymphoma-6 protooncogene; Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0.692	0.308	0	0	0	0.263
+FOXO1	BCL6	Oestreich et al, 2012, Molecular mechanisms that control the expression and activity of Bcl-6 in TH1 cells to regulate flexibility with a TFH-like gene profile	promotes	0.385	1	0	0	0	0.842
+FOXO1	EZH2	Gray et al, 2017, Polycomb Repressive Complex 2-Mediated Chromatin Repression Guides Effector CD8+ T Cell Terminal Differentiation and Loss of Multipotency	inhibits	1	1	0	0	0	0.263
+FOXO1	PDCD1	Staron et al, The Transcription Factor FoxO1 Sustains Expression of the Inhibitory Receptor PD-1 and Survival of Antiviral CD8+ T Cells during Chronic Infection. Pauken and Wherry, 2015, Overcoming  T  cell  exhaustion  in infection  and  cancer	promotes	0	0	0	0	0	0.158
+GATA3	BATF	Karuchi et al, 2014, The transcription factor BATF operates as an essential differentiation checkpoint in early effector CD8+ T cells	promotes	0	0.615	0.688	0.714	0.214	0.158
+GATA3	MYC	Wang et al, 2013, GATA3 controls the maintenance and proliferation of T cells downstream of TCR and cytokine signaling	promotes	0.846	0.385	0.375	0.5	0.929	0.368
+HIF1A	BATF	Karuchi et al, 2014, The transcription factor BATF operates as an essential differentiation checkpoint in early effector CD8+ T cells	promotes	1	0.923	0.938	0.393	0.75	0.947
+HIF1A	MYC	Hough et al, 2015, Transcriptional regulation of T  cell  metabolism	promotes	0.154	0.077	0.125	0.536	0.321	0.842
+HRAS	MAPK1	Chen et al, 2000, The p38 Pathway Provides Negative Feedback for Ras Proliferative Signalings	promotes	0.692	0.462	0	0	0	0.421
+HRAS	MAPK3	Chen et al, 2000, The p38 Pathway Provides Negative Feedback for Ras Proliferative Signalings	promotes	0.385	0.846	0	0	0	0.895
+HRAS	MAPK8	Chen et al, 2000, The p38 Pathway Provides Negative Feedback for Ras Proliferative Signalings	promotes	0	0.154	0	0	0	0.158
+ICOS	MAF	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	promotes	1	1	0.5	0.429	0.357	0.053
+ID2	TCF3	Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	inhibits	0.923	0.923	0.5	0.429	0.679	0.579
+ID3	TCF3	Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	inhibits	1	0.077	0.312	0.571	0.536	0.421
+IFNAR1	BCL6	Nakayamada et al, 2014, Type I IFN induces binding of STAT1 to Bcl6: divergent roles of STAT family transcription factors in the T follicular helper cell genetic program Zhou et al, 2005, Induction of BCL6 gene expression by interferongamma and identification of an IRE in exon	promotes	0.385	1	0.438	0.679	0.393	0.947
+IFNAR1	MT1	Friedman et al, Transcriptional and Posttranscriptional Regulation of Interferon-Induced Gene Expression in Human Cells	promotes	0	0	0.125	0.143	0.25	0
+IFNAR1	MT2	Friedman et al, Transcriptional and Posttranscriptional Regulation of Interferon-Induced Gene Expression in Human Cells	promotes	0	0	0.062	0.143	0.429	0
+IFNAR1	PDCD1	Bally et al, Genetic and Epigenetic Regulation of PD-1 Expression	promotes	0	0	0.062	0.25	0.143	0.053
+IFNAR1	PIK3CA	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	1	0.538	0.875	0.75	0.964	0.579
+IFNAR1	PIK3CB	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	1	1	0	0	0	0.474
+IFNAR1	PIK3CG	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0.615	0.077	0	0	0	0.053
+IFNAR1	PRKCQ	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	1	0.923	0.812	0.607	0.821	0.737
+IFNAR1	STAT1	Au-Yeung et al, Transcriptional regulation by STAT1 and STAT2 in the interferon JAK-STAT pathway	promotes	0.154	0.846	0.688	0.607	0.607	0.895
+IFNAR1	STAT4	Ramos et al, IFN-a  Is Not Sufficient to Drive Th1 Development Due to Lack of Stable T-bet Expression	promotes	0.385	0.308	0.625	0.357	0.893	0.947
+IFNAR2	BCL6	Nakayamada et al, 2014, Type I IFN induces binding of STAT1 to Bcl6: divergent roles of STAT family transcription factors in the T follicular helper cell genetic program Zhou et al, 2005, Induction of BCL6 gene expression by interferongamma and identification of an IRE in exon	promotes	0.692	1	0.562	0.536	0.5	0.947
+IFNAR2	MT1	Friedman et al, Transcriptional and Posttranscriptional Regulation of Interferon-Induced Gene Expression in Human Cells	promotes	0.308	0	0.25	0.429	0.357	0
+IFNAR2	MT2	Friedman et al, Transcriptional and Posttranscriptional Regulation of Interferon-Induced Gene Expression in Human Cells	promotes	0.308	0	0.188	0.286	0.321	0
+IFNAR2	PDCD1	Bally et al, Genetic and Epigenetic Regulation of PD-1 Expression	promotes	0.308	0	0.188	0.25	0.25	0.053
+IFNAR2	PIK3CA	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0.692	0.538	0.75	0.393	0.714	0.579
+IFNAR2	PIK3CB	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0.692	1	0	0	0	0.474
+IFNAR2	PIK3CG	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0.615	0.077	0	0	0	0.053
+IFNAR2	PRKCQ	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0.692	0.923	0.812	0.464	0.643	0.737
+IFNAR2	STAT1	Au-Yeung et al, Transcriptional regulation by STAT1 and STAT2 in the interferon JAK-STAT pathway	promotes	0.462	0.846	0.688	0.607	0.571	0.895
+IFNAR2	STAT4	Ramos et al, IFN-a  Is Not Sufficient to Drive Th1 Development Due to Lack of Stable T-bet Expression	promotes	0.692	0.308	0.625	0.357	0.714	0.947
+IFNG	EGR2	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0.077	0.385	0.062	1	0.679	1
+IFNG	EGR3	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0.538	1	0	0	0	1
+IFNG	MT1	Friedman et al, Transcriptional and Posttranscriptional Regulation of Interferon-Induced Gene Expression in Human Cells	promotes	1	1	0.812	0.714	0.357	0.947
+IFNG	MT2	Friedman et al, Transcriptional and Posttranscriptional Regulation of Interferon-Induced Gene Expression in Human Cells	promotes	1	1	0.875	0.786	0.321	0.947
+IFNG	PIK3CA	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0	0.462	0.188	0.321	0.643	0.474
+IFNG	PIK3CB	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0	0	0	0	0	0.474
+IFNG	PIK3CG	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0.385	0.923	0	0	0	0.895
+IFNG	PRKCQ	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0	0.077	0.125	0.536	0.571	0.316
+IFNG	SLC2A1	Schurich et al, 2016, Distinct Metabolic Requirements of Exhausted and Functional Virus-Specific CD8 T Cells in the Same Host	inhibits	0.615	0.231	0.625	0.071	0.393	0.474
+IFNG	SLC2A2	Schurich et al, 2016, Distinct Metabolic Requirements of Exhausted and Functional Virus-Specific CD8 T Cells in the Same Host	inhibits	0	0	0.25	0.429	0.464	0
+IFNG	SLC2A3	Schurich et al, 2016, Distinct Metabolic Requirements of Exhausted and Functional Virus-Specific CD8 T Cells in the Same Host	inhibits	0.923	0.077	0.5	0.071	0.464	0.053
+IFNG	SLC2A4	Schurich et al, 2016, Distinct Metabolic Requirements of Exhausted and Functional Virus-Specific CD8 T Cells in the Same Host	inhibits	0	0	0.438	0.429	0.5	0
+IFNG	SLC2A5	Schurich et al, 2016, Distinct Metabolic Requirements of Exhausted and Functional Virus-Specific CD8 T Cells in the Same Host	inhibits	0	0	0	0	0	0
+IFNG	STAT1	Radaeva et al, Interferon-? inhibits interferon-a signalling in hepatic cells: evidence for the involvement of STAT1 induction and hyperexpression of STAT1 in chronic hepatitis C	inhibits	0.154	0.846	0.625	0.893	0.571	0.947
+IFNG	STAT2	Radaeva et al, Interferon-? inhibits interferon-a signalling in hepatic cells: evidence for the involvement of STAT1 induction and hyperexpression of STAT1 in chronic hepatitis C	inhibits	0.923	0.769	0	0	0	0.789
+IFNGR1	EGR2	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	1	0.846	0.75	0.821	0.929	1
+IFNGR1	EGR3	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0.538	0.385	0	0	0	1
+IFNGR1	MT2	Friedman et al, Transcriptional and Posttranscriptional Regulation of Interferon-Induced Gene Expression in Human Cells	promotes	0.077	0.385	0.188	0.607	0.5	0.947
+IFNGR1	PIK3CA	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0.923	0.154	1	0.5	0.893	0.474
+IFNGR1	PIK3CB	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0.923	0.615	0	0	0	0.474
+IFNGR1	PIK3CG	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0.692	0.308	0	0	0	0.895
+IFNGR1	PRKCQ	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0.923	0.692	0.688	0.714	0.893	0.316
+IFNGR2	EGR2	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0.923	0.615	0	0	0	0.263
+IFNGR2	EGR3	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	inhibits	0.462	0	0	0	0	0.263
+IFNGR2	MT2	Friedman et al, Transcriptional and Posttranscriptional Regulation of Interferon-Induced Gene Expression in Human Cells	promotes	0	0	0	0	0	0.316
+IFNGR2	PIK3CA	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	1	0.538	0	0	0	0.579
+IFNGR2	PIK3CB	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	1	1	0	0	0	0.368
+IFNGR2	PIK3CG	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	0.615	0.077	0	0	0	0.368
+IFNGR2	PRKCQ	Platanias, MECHANISMS OF TYPE-1 AND TYPE-2 INTERFERON-MEDIATED SIGNALLING	promotes	1	0.923	0	0	0	0.421
+IL12RB1	BATF	Kuroda et al, 2011, Basic leucine zipper transcription factor, ATF-like (BATF) regulates epigenetically and energetically effector CD8 T-cell differentiation via Sirt1 expression	promotes	1	1	1	0.929	0.821	0
+IL12RB1	ID2	Xin et al, 2016, A molecular threshold for effector CD8+ T cell differentiation controlled by transcription factors Blimp-1 and T-bet	promotes	1	1	1	0.929	0.25	0.947
+IL12RB1	PRDM1	Xin et al, 2016, A molecular threshold for effector CD8+ T cell differentiation controlled by transcription factors Blimp-1 and T-bet	promotes	1	1	1	0.857	0.75	0.947
+IL12RB1	STAT4	Bacon et al, 1995, Interleukin 12 induces tyrosine phosphorylation and activation of STAT4 in human lymphocytes. Stark et al, 2013, IL-12-mediated STAT4 signaling and TCR signal strength cooperate in the induction of CD40L in human and mouse CD8+ T cells	promotes	0.615	0.692	0.438	0.857	0.143	0.053
+IL12RB1	TBX21	Joshi et a;, 2007, Inflammation Directs Memory Precursor and Short-Lived Effector CD8+ T Cell Fates via the Graded Expression of T-bet Transcription Factor	promotes	0	0	0	0	0	0
+IL12RB2	BATF	Kuroda et al, 2011, Basic leucine zipper transcription factor, ATF-like (BATF) regulates epigenetically and energetically effector CD8 T-cell differentiation via Sirt1 expression	promotes	0	0	0.5	0.786	0.429	0
+IL12RB2	ID2	Xin et al, 2016, A molecular threshold for effector CD8+ T cell differentiation controlled by transcription factors Blimp-1 and T-bet	promotes	0	0	0.5	0.714	0.571	0
+IL12RB2	PRDM1	Xin et al, 2016, A molecular threshold for effector CD8+ T cell differentiation controlled by transcription factors Blimp-1 and T-bet	promotes	0	0	0.5	0.643	0.357	0
+IL12RB2	STAT4	Bacon et al, 1995, Interleukin 12 induces tyrosine phosphorylation and activation of STAT4 in human lymphocytes. Stark et al, 2013, IL-12-mediated STAT4 signaling and TCR signal strength cooperate in the induction of CD40L in human and mouse CD8+ T cells	promotes	0	0	0.438	0.643	0.607	0
+IL12RB2	TBX21	Joshi et a;, 2007, Inflammation Directs Memory Precursor and Short-Lived Effector CD8+ T Cell Fates via the Graded Expression of T-bet Transcription Factor	promotes	0	0	0	0	0	0
+IL2	BCL6	Liao et al, 2013, Interleukin2 at the Crossroads of Effector Responses, Tolerance, and Immunotherapy	inhibits	0.385	0.846	0.438	0.536	0.429	0
+IL2	BCL6	Liao et al, 2014, Opposing actions of IL-2 and IL-21 on Th9 differentiation correlate with their differential regulation of BCL6 expression	inhibits	0.385	0.846	0.438	0.536	0.429	0
+IL2	IL2RB	Liao et al, 2013, Interleukin2 at the Crossroads of Effector Responses, Tolerance, and Immunotherapy	promotes	1	0.846	0.5	0.75	0.536	0.053
+IL21R	BATF	Xin et al, A Critical Role of IL-21-Induced BATF in Sustaining CD8-T-Cell-Mediated Chronic Viral Contro	promotes	0	0.385	0	0	0	0.263
+IL21R	STAT3	Wan et al, Opposing roles of STAT1 and STAT3 in IL-21 function in CD4+ T cells (see also Rao et al, Transcription Factor Foxo1 Represses T-bet-Mediated Effector Functions and Promotes Memory CD8+ T Cell Differentiation)	promotes	0.923	0.692	0	0	0	0.842
+IL2RA	BCL6	Oestreich et al, 2014, Bcl6 directly represses the gene program of the glycolysis pathway, Oestreich et al, 2012, Molecular mechanisms that control the expression and activity of Bcl-6 in TH1 cells to regulate flexibility with a TFH-like gene profile	inhibits	0.385	1	0.375	0.821	0.75	0.684
+IL2RA	BCL6	Liao et al, 2014, Opposing actions of IL-2 and IL-21 on Th9 differentiation correlate with their differential regulation of BCL6 expression	inhibits	0.385	1	0.375	0.821	0.75	0.684
+IL2RA	FOXO1	Ouyang et al, An Essential Role of the Forkhead-Box Transcription Factor Foxo1 in Control of T Cell Homeostasis and Tolerance, Oestreich et al, 2012, Molecular mechanisms that control the expression and activity of Bcl-6 in TH1 cells to regulate flexibility with a TFH-like gene profile	inhibits	1	1	0	0	0	0.526
+IL2RA	GATA3	Wan, 2014, GATA3: A master of many trades in immune regulation	promotes	0	0.615	0.438	0.786	0.643	0.579
+IL2RA	HIF1A	Oestreich et al, 2014, Bcl6 directly represses the gene program of the glycolysis pathway	promotes	1	0.923	0.312	0.321	0.036	0.316
+IL2RA	ID2	Xin et al, 2016, A molecular threshold for effector CD8+ T cell differentiation controlled by transcription factors Blimp-1 and T-bet	promotes	1	1	0.25	1	0.786	0.684
+IL2RA	PRDM1	Xin et al, 2016, A molecular threshold for effector CD8+ T cell differentiation controlled by transcription factors Blimp-1 and T-bet	promotes	1	1	0.25	0.929	0.143	0.684
+IL2RB	BCL6	Oestreich et al, 2014, Bcl6 directly represses the gene program of the glycolysis pathway, Oestreich et al, 2012, Molecular mechanisms that control the expression and activity of Bcl-6 in TH1 cells to regulate flexibility with a TFH-like gene profile	inhibits	0.385	1	0.812	0.679	0.679	0.947
+IL2RB	BCL6	Liao et al, 2014, Opposing actions of IL-2 and IL-21 on Th9 differentiation correlate with their differential regulation of BCL6 expression	inhibits	0.385	1	0.812	0.679	0.679	0.947
+IL2RB	CD160	Beltra et al, 2016, IL2Rß-dependent signals drive terminal exhaustion and suppress memory development during chronic viral infection	promotes	0	0	0.688	0.714	0.321	0
+IL2RB	CD244	Beltra et al, 2016, IL2Rß-dependent signals drive terminal exhaustion and suppress memory development during chronic viral infection	promotes	1	1	0.688	0.464	0.5	1
+IL2RB	FOXO1	Ouyang et al, An Essential Role of the Forkhead-Box Transcription Factor Foxo1 in Control of T Cell Homeostasis and Tolerance, Oestreich et al, 2012, Molecular mechanisms that control the expression and activity of Bcl-6 in TH1 cells to regulate flexibility with a TFH-like gene profile	inhibits	1	1	0	0	0	0.789
+IL2RB	GATA3	Wan, 2014, GATA3: A master of many trades in immune regulation	promotes	0	0.615	0.375	0.643	0.571	0.842
+IL2RB	HAVCR2	Beltra et al, 2016, IL2Rß-dependent signals drive terminal exhaustion and suppress memory development during chronic viral infection	promotes	1	1	0	0	0	0.947
+IL2RB	HIF1A	Oestreich et al, 2014, Bcl6 directly represses the gene program of the glycolysis pathway	promotes	1	0.923	0.625	0.214	0.464	0.053
+IL2RB	ID2	Xin et al, 2016, A molecular threshold for effector CD8+ T cell differentiation controlled by transcription factors Blimp-1 and T-bet	promotes	1	1	0.688	0.714	0.357	0.947
+IL2RB	LAG3	Beltra et al, 2016, IL2Rß-dependent signals drive terminal exhaustion and suppress memory development during chronic viral infection	promotes	1	1	0.688	0.679	0.5	0.789
+IL2RB	MYC	Beltra et al, 2016, IL2Rß-dependent signals drive terminal exhaustion and suppress memory development during chronic viral infection	promotes	0.154	0	0.375	0.357	0.643	0.211
+IL2RB	PDCD1	Beltra et al, 2016, IL2Rß-dependent signals drive terminal exhaustion and suppress memory development during chronic viral infection	promotes	1	1	0.688	0.643	0.5	0.947
+IL2RB	PRDM1	Xin et al, 2016, A molecular threshold for effector CD8+ T cell differentiation controlled by transcription factors Blimp-1 and T-bet	promotes	1	1	0.688	0.643	0.357	0.947
+IRF4	BCL6	Raczkowski, The transcription factor Interferon Regulatory Factor 4 is required for the generation of protective effector CD8+ T cells, 2013. Xin et al, A Critical Role of IL-21-Induced BATF in Sustaining CD8-T-Cell-Mediated Chronic Viral Control	inhibits	0.385	1	0.312	0.536	0.143	0.684
+IRF4	PRDM1	Raczkowski, The transcription factor Interferon Regulatory Factor 4 is required for the generation of protective effector CD8+ T cells, 2013. Xin et al, A Critical Role of IL-21-Induced BATF in Sustaining CD8-T-Cell-Mediated Chronic Viral Control	promotes	1	1	0.812	0.357	0.821	0.684
+JUN	IFNG	Lee et al, A Distal Enhancer in the Interferon-  (IFN- ) Locus Revealed by Genome Sequence Comparison	promotes	0.077	0.077	0.312	0.607	0.786	0.105
+JUN	IFNGR1	Lee et al, A Distal Enhancer in the Interferon-  (IFN- ) Locus Revealed by Genome Sequence Comparison	promotes	1	0.692	0.5	0.5	0.607	0.105
+JUN	IFNGR2	Lee et al, A Distal Enhancer in the Interferon-  (IFN- ) Locus Revealed by Genome Sequence Comparison	promotes	0.923	0.923	0	0	0	0.632
+JUN	IL2	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0.077	0.231	0.375	0.607	0.643	0.895
+JUN	IL2RB	Liao et al, 2013, Interleukin2 at the Crossroads of Effector Responses, Tolerance, and Immunotherapy	promotes	0.077	0.077	0.625	0.679	0.679	0.053
+JUN	PDCD1	Bally et al, 2016, Genetic and Epigenetic Regulation of PDCD1 Expression	promotes	0.077	0.077	0.312	0.429	0.321	0.105
+JUN	PRDM1	Vasanwala et al,  Repression of AP-1 function: a mechanism for the regulation of Blimp-1 expression and B lymphocyte differentiation by the B cell lymphoma-6 protooncogene,; Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0.077	0.077	0.312	0.536	0.179	0.105
+JUNB	IFNG	Lee et al, A Distal Enhancer in the Interferon-  (IFN- ) Locus Revealed by Genome Sequence Comparison	promotes	0.538	0.615	0.375	0.643	0.679	0.053
+JUNB	IL2	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0.538	0.615	0.562	0.643	0.75	0.947
+JUNB	IL2RB	Liao et al, 2013, Interleukin2 at the Crossroads of Effector Responses, Tolerance, and Immunotherapy	promotes	0.538	0.615	0.312	0.786	0.643	0
+JUNB	PDCD1	Bally et al, 2016, Genetic and Epigenetic Regulation of PDCD1 Expression 	promotes	0.538	0.615	0.375	0.464	0.286	0.053
+JUNB	PRDM1	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0.538	0.615	0.375	0.571	0.143	0.053
+JUND	IFNG	Lee et al, A Distal Enhancer in the Interferon-  (IFN- ) Locus Revealed by Genome Sequence Comparison	promotes	0.077	0.308	0.5	0.571	0.75	0.737
+JUND	IL2	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0.077	0.462	0.688	0.571	0.75	0.263
+JUND	IL2RB	Liao et al, 2013, Interleukin2 at the Crossroads of Effector Responses, Tolerance, and Immunotherapy	promotes	0.077	0.308	0.188	0.643	0.571	0.684
+JUND	PDCD1	Bally et al, 2016, Genetic and Epigenetic Regulation of PDCD1 Expression 	promotes	0.077	0.308	0.5	0.393	0.5	0.632
+JUND	PRDM1	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0.077	0.308	0.5	0.5	0.357	0.737
+KDM6B	EZH2	de Santana et al, 2007, The Histone H3 Lysine-27 Demethylase Jmjd3 Links Inflammation to Inhibition of Polycomb-Mediated Gene Silencing	inhibits	1	1	0	0	0	0.368
+KRAS	MAPK1	Chen et al, 2000, The p38 Pathway Provides Negative Feedback for Ras Proliferative Signalings	promotes	0.308	0.769	0.875	0.75	0.929	0.842
+KRAS	MAPK3	Chen et al, 2000, The p38 Pathway Provides Negative Feedback for Ras Proliferative Signalings	promotes	0.615	0.077	0.25	0.393	0.321	0.368
+KRAS	MAPK8	Chen et al, 2000, The p38 Pathway Provides Negative Feedback for Ras Proliferative Signalings	promotes	1	0.923	0.875	0.714	0.821	0.684
+LCK	ZAP70	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0	0	0.312	0.857	0.321	0
+LEF1	BCL6	Xu ey al, 2015, The transcription factor TCF-1 initiates the differentiation of TFH cells during acute viral infection	promotes	0	0	0.5	0.821	0.25	0
+LEF1	CXCR5	Choi et al, 2015, EF1 and TCF7 orchestrate T(FH) differentiation by regulating differentiation circuits upstream of the transcriptional repressor Bcl6	promotes	0	0	0	0.643	0	0
+LEF1	EOMES	Zhou et al, 2010, Differentiation and Persistence of Memory CD8A+ T Cells Depend on T Cell Factor 1	promotes	0	0	0	0	0.071	0
+LEF1	GZMA	Zhou et al, 2010, Differentiation and Persistence of Memory CD8A+ T Cells Depend on T Cell Factor 1	inhibits	0	0	1	0.893	0.571	0
+LEF1	GZMB	Zhou et al, 2010, Differentiation and Persistence of Memory CD8A+ T Cells Depend on T Cell Factor 1	inhibits	0	0	1	1	0.607	0
+LEF1	IFNG	Yu et al, T cell factor 1 initiates the T helper type 2 fate by inducing the transcription factor GATA-3 and repressing interferon-g	inhibits	0	0	1	1	0.321	0
+LEF1	KLRG1	Zhou et al, 2010, Differentiation and Persistence of Memory CD8A+ T Cells Depend on T Cell Factor 1	inhibits	0	0	0.875	1	0	0
+LEF1	LEF1	Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	promotes	0	0	1	1	1	0
+LEF1	MYC	Zhou et al, 2010, Differentiation and Persistence of Memory CD8A+ T Cells Depend on T Cell Factor 1	promotes	0	0	0.938	0.714	0.643	0
+LEF1	PRDM1	Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	promotes	0	0	0	0.071	0.143	0
+LEF1	PRF1	Xing et al, Tcf1 and Lef1 transcription factors establish CD8+ T cell identity through intrinsic HDAC activity	inhibits	0	0	1	1	0.321	0
+MAPK1	EGR1	Collins et al, 2007, Opposing regulation of T cell function by Egr1:NAB2 and Egr2:Egr3	promotes	0.615	0.231	0.188	0.429	0.179	0.474
+MAPK1	FOS	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.692	0.692	0	0	0	0.684
+MAPK1	JUN	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.385	0.615	0.562	0.25	0.5	0.737
+MAPK1	JUNB	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.538	0.231	0.5	0.071	0.536	0.684
+MAPK1	JUND	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.385	0.385	0.375	0.286	0.393	0.421
+MAPK3	EGR1	Collins et al, 2007, Opposing regulation of T cell function by Egr1:NAB2 and Egr2:Egr3	promotes	0.615	0.462	0.562	0.214	0.5	0.526
+MAPK3	FOS	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.385	0.308	0	0	0	0.211
+MAPK3	JUN	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.692	0.077	0.312	0.536	0.464	0.053
+MAPK3	JUNB	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.538	0.615	0.625	0.571	0.571	0
+MAPK3	JUND	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.692	0.308	0.875	0.5	0.643	0.684
+MAPK8	FOS	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.308	0.692	0	0	0	0.842
+MAPK8	JUN	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.923	0.923	0.688	0.5	0.607	1
+MAPK8	JUNB	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.462	0.385	0.625	0.464	0.643	0.947
+MAPK8	JUND	Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0.923	0.692	0.5	0.536	0.5	0.368
+MT1	MAPK1	Lazarczyk et al, 2012, EVER Proteins, Key Elements of the Natural AntiHuman Papillomavirus Barrier, Are Regulated upon TCell Activation	promotes	0.692	0.308	0.062	0.357	0.214	0.316
+MT1	MAPK3	Lazarczyk et al, 2012, EVER Proteins, Key Elements of the Natural AntiHuman Papillomavirus Barrier, Are Regulated upon TCell Activation	promotes	0.385	1	0.688	0.643	0.607	1
+MT1	ZN	Singer et al, 2016, A Distinct Gene Module for Dysfunction Uncoupled from Activation in Tumor-Infiltrating T Cells.	promotes	0	0	0	0	0	0
+MT2	ZN	Singer et al, 2016, A Distinct Gene Module for Dysfunction Uncoupled from Activation in Tumor-Infiltrating T Cells.	promotes	0	0	0	0	0	0
+MTOR	glycolysis	van der Widnt & Pearce, Metabolic switching and fuel choice during T-cell differentiation and memory development	promotes	0	0	0	0	0	0
+MTOR	RICTOR	Rosner, mTOR phosphorylated at S2448 binds to raptor and rictor, 2010.	promotes	1	0.769	0	0	0	0.421
+MTOR	RPTOR	Rosner, mTOR phosphorylated at S2448 binds to raptor and rictor, 2010.	promotes	1	1	0	0	0	0.632
+MYC	proliferation	Hough et al, 2015, Transcriptional regulation of T  cell  metabolism	promotes	0	0	0	0	0	0
+NFATC1	IFNG	Lee et al, A Distal Enhancer in the Interferon-  (IFN- ) Locus Revealed by Genome Sequence Comparison. Kiani et al, Regulation of interferon-gamma gene expression by nuclear factor of activated T cells	promotes	0.692	0.846	1	0.643	0.357	0.789
+NFATC1	IFNGR1	Lee et al, A Distal Enhancer in the Interferon-  (IFN- ) Locus Revealed by Genome Sequence Comparison	promotes	0.385	0.385	0.188	0.821	0.107	0.789
+NFATC1	IFNGR2	Lee et al, A Distal Enhancer in the Interferon-  (IFN- ) Locus Revealed by Genome Sequence Comparison	promotes	0.308	0.154	0	0	0	0.474
+NFATC1	IL2	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0.692	0.846	0.562	0.357	0.357	0.211
+NFATC1	IL2RB	Liao et al, 2013, Interleukin2 at the Crossroads of Effector Responses, Tolerance, and Immunotherapy	promotes	0.692	0.846	0.688	0.393	0.464	0.842
+NFATC1	NFATC1	Serfling et al, 2006, NFATC2 autoregulation: a crucial step for cellfate determination	promotes	1	1	1	1	1	1
+NFATC1	NFATC1	Serfling at al, NFATc1 autoregulation: a crucial step for cell-fate determination	promotes	1	1	1	1	1	1
+NFATC1	NR4A1	Martinez-Gonzalez et al, The NR4A subfamily of nuclear receptors: new early genes regulated by growth factors in vascular cells	promotes	0.692	0.923	0.438	0.571	0.393	0.632
+NFATC1	PDCD1	Bally et al, 2016, Genetic and Epigenetic Regulation of PDCD1 Expression 	promotes	0.692	0.846	1	0.464	0.964	0.789
+NFATC1	PRDM1	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0.692	0.846	1	0.714	0.893	0.789
+NFATC2	EGR2	Martinez et al, 2015, The Transcription Factor NFAT Promotes Exhaustion of Activated CD8+ T Cells 	promotes	0	0.769	0.562	0.607	0.571	0.684
+NFATC2	EGR2	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	promotes	0	0.769	0.562	0.607	0.571	0.684
+NFATC2	EGR3	Miao et al, 2017, Egr2 and 3 control adaptive immune responses by temporally uncoupling expansion from T cell differentiation	promotes	0.462	0.462	0	0	0	0.684
+NFATC2	IFNG	Lee et al, A Distal Enhancer in the Interferon-  (IFN- ) Locus Revealed by Genome Sequence Comparison. Kiani et al, Regulation of interferon-gamma gene expression by nuclear factor of activated T cells	promotes	0.077	0.538	0.625	0.393	0.464	0.316
+NFATC2	IL2	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0.077	0.538	0.688	0.607	0.679	0.684
+NFATC2	IL2RB	Liao et al, 2013, Interleukin2 at the Crossroads of Effector Responses, Tolerance, and Immunotherapy	promotes	0.077	0.538	0.688	0.607	0.786	0.368
+NFATC2	NFATC1	Zhou et al, Regulation of the Murine Nfatc1 Gene by NFATc2	promotes	0.385	0.692	0.625	0.107	0.536	0.526
+NFATC2	PDCD1	Bally et al, 2016, Genetic and Epigenetic Regulation of PDCD1 Expression 	promotes	0.077	0.538	0.625	0.5	0.571	0.316
+NFATC2	PRDM1	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0.077	0.538	0.625	0.321	0.429	0.316
+NFKB1	IL2	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0	0.154	0.375	0.286	0.393	0.789
+NFKB1	IL2RB	Liao et al, 2013, Interleukin2 at the Crossroads of Effector Responses, Tolerance, and Immunotherapy	promotes	0	0	0.5	0.107	0.5	0.158
+NFKB1	IRF4	Shaffer et al, IRF4: Immunity. Malignancy! Therapy?	promotes	0	0	0.375	0.571	0.464	0.421
+NFKB1	PDCD1	Bally et al, 2016, Genetic and Epigenetic Regulation of PDCD1 Expression 	promotes	0	0	0.188	0.321	0.286	0.105
+NFKB1	PRDM1	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0	0	0.188	0.286	0.357	0.211
+NFKB2	IRF4	Shaffer et al, IRF4: Immunity. Malignancy! Therapy?	promotes	0.846	0.462	0.438	0.357	0.464	0.316
+NR4A1	glycolysis	Fassett et al, Nuclear receptor Nr4a1 modulates both regulatory T-cell (Treg) differentiation and clonal deletion 	promotes	0	0	0	0	0	0
+NR4A1	IRF4	Nowyhed et al, Cutting Edge: The Orphan Nuclear Receptor Nr4a1 Regulates CD8+ T Cell Expansion and Effector Function through Direct Repression of Irf4	inhibits	0	0.231	0.375	0.714	0.607	0.263
+NR4A2	glycolysis	Mognol et al, Exhaustion-associated regulatory regions in CD8+ tumor-infiltrating T cells , PNAS 2017.	promotes	0	0	0	0	0	0
+NR4A3	glycolysis	Odagiu et al, NR4A3 controls CD8+ T cell metabolism and differentiation, J Immunol May 1, 2016, 196 (1 Supplement) 57.8	promotes	0	0	0	0	0	0
+NRAS	MAPK1	Chen et al, 2000, The p38 Pathway Provides Negative Feedback for Ras Proliferative Signalings	promotes	0.308	0.769	0.812	0.714	0.607	0.421
+NRAS	MAPK3	Chen et al, 2000, The p38 Pathway Provides Negative Feedback for Ras Proliferative Signalings	promotes	0.615	0.077	0.438	0.143	0.714	0.789
+NRAS	MAPK8	Chen et al, 2000, The p38 Pathway Provides Negative Feedback for Ras Proliferative Signalings	promotes	1	0.923	0.938	0.821	0.5	0.263
+PDCD1	AKT1	Bengsch et al, Bioenergetic Insufficiencies Due to Metabolic Alterations Regulated by the Inhibitory Receptor PD-1 Are an Early Driver of CD8+ T Cell Exhaustion	promotes	1	1	0.188	0.679	0.286	0.947
+PDCD1	AKT2	Bengsch et al, Bioenergetic Insufficiencies Due to Metabolic Alterations Regulated by the Inhibitory Receptor PD-1 Are an Early Driver of CD8+ T Cell Exhaustion	promotes	0.538	0.538	0	0	0	0.316
+PDCD1	AKT3	Bengsch et al, Bioenergetic Insufficiencies Due to Metabolic Alterations Regulated by the Inhibitory Receptor PD-1 Are an Early Driver of CD8+ T Cell Exhaustion	promotes	0	0	0	0	0	0.474
+PDCD1	CD247	Kamphorst et al, Rescue of exhausted CD8 T cells by PD-1–targeted therapies is CD28-dependent	inhibits	0.923	0.923	0.938	0.571	0.893	0.053
+PDCD1	CD28	Kamphorst et al, Rescue of exhausted CD8 T cells by PD-1–targeted therapies is CD28-dependent	inhibits	0	0.385	0.25	0.571	0.607	0.842
+PDCD1	CD3D	Kamphorst et al, Rescue of exhausted CD8 T cells by PD-1–targeted therapies is CD28-dependent	inhibits	0	0	0.75	0.429	0.786	0
+PDCD1	CD3E	Kamphorst et al, Rescue of exhausted CD8 T cells by PD-1–targeted therapies is CD28-dependent	inhibits	0	0	0.25	0.286	0.321	0
+PDCD1	CD3G	Kamphorst et al, Rescue of exhausted CD8 T cells by PD-1–targeted therapies is CD28-dependent	inhibits	1	0.077	0.438	0.571	0.357	0.105
+PDCD1	CD8A	Kamphorst et al, Rescue of exhausted CD8 T cells by PD-1–targeted therapies is CD28-dependent	inhibits	0	0	1	0.607	0.786	0
+PDCD1	NR4A1	Mongol et al, Exhaustion-associated regulatory regions in CD8+ tumor-infiltrating T cells (correlation)	inhibits	0	0.231	0.562	0.536	0.643	0.579
+PDCD1	BATF	Quigley et al, 2010, Transcriptional analysis of HIVspecific CD8A+ T cells shows that PDCD1 inhibits T cell function by upregulating BATF	promotes	1	1	1	0.75	0.786	0.053
+PDCD1	HRAS	Boussiotis, Molecular and Biochemical Aspects of the PD-1 Checkpoint Pathway	inhibits	0	0.154	0	0	0	0.158
+PDCD1	KRAS	Boussiotis, Molecular and Biochemical Aspects of the PD-1 Checkpoint Pathway	inhibits	1	0.923	0.875	0.714	0.75	0.684
+PDCD1	NRAS	Boussiotis, Molecular and Biochemical Aspects of the PD-1 Checkpoint Pathway	inhibits	1	0.923	0.938	0.679	0.429	0.263
+PDCD1	PIK3CA	Boussiotis, Molecular and Biochemical Aspects of the PD-1 Checkpoint Pathway	inhibits	1	0.538	0.812	0.571	0.821	0.632
+PDCD1	PIK3CB	Boussiotis, Molecular and Biochemical Aspects of the PD-1 Checkpoint Pathway	inhibits	1	1	0	0	0	0.526
+PDCD1	PIK3CG	Boussiotis, Molecular and Biochemical Aspects of the PD-1 Checkpoint Pathway	inhibits	0.615	0.077	0	0	0	0.105
+PDCD1	PPARGC1A	Bengsch et al, 2016, Bioenergetic Insufficiencies Due to Metabolic Alterations Regulated by the Inhibitory Receptor PD-1 Are an Early Driver of CD8+ T Cell Exhaustion	inhibits	0.846	0.846	0.688	0.464	0.679	0.263
+PDCD1	PRKCQ	Chen & Flies, 2013, Molecular mechanisms of T cell co-stimulation and co-inhibition	inhibits	1	0.923	0.875	0.571	0.893	0.789
+PDCD1	SLC2A1	Schurich et al, 2016, Distinct Metabolic Requirements of Exhausted and Functional Virus-Specific CD8 T Cells in the Same Host	promotes	0.385	0.769	0.375	0.607	0.071	0.421
+PDCD1	SLC2A2	Schurich et al, 2016, Distinct Metabolic Requirements of Exhausted and Functional Virus-Specific CD8 T Cells in the Same Host	promotes	0	0	0.75	0.536	0.643	0
+PDCD1	SLC2A3	Schurich et al, 2016, Distinct Metabolic Requirements of Exhausted and Functional Virus-Specific CD8 T Cells in the Same Host	promotes	0.077	0.923	0.5	0.679	0.143	0.947
+PDCD1	SLC2A4	Schurich et al, 2016, Distinct Metabolic Requirements of Exhausted and Functional Virus-Specific CD8 T Cells in the Same Host	promotes	0	0	0.562	0.821	0.393	0
+PDCD1	SLC2A5	Schurich et al, 2016, Distinct Metabolic Requirements of Exhausted and Functional Virus-Specific CD8 T Cells in the Same Host	promotes	0	0	0	0	0	0
+PDCD1	ZAP70	Xia et al, 2015, Signaling pathway and dysregulation of PD1 and its ligands in lymphoid malignancies	inhibits	0	0	0.25	0.464	0.25	0
+PPARGC1A	proliferation	Schrping, 2016, The Tumor Microenvironment Represses T Cell Mitochondrial Biogenesis to Drive Intratumoral T Cell Metabolic Insufficiency and Dysfunction	promotes	0	0	0	0	0	0
+PRDM1	BCL6	Shin et al, Epigenetic Modifications induced by the Transcriptional Repressor Blimp-1 regulate CD8+ T cell Memory Progression during Acute Virus Infection. Cimmino et al, Blimp-1 Attenuates Th1 Differentiation by Repression of ifng, tbx21, and bcl6 Gene Expression. Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	inhibits	0.385	1	0.5	0.75	0.321	1
+PRDM1	CXCR5	Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	inhibits	0.077	0.846	0	0.643	0.143	1
+PRDM1	ID3	Gong & Malek, Cytokine-Dependent Blimp-1 Expression in Activated T Cells Inhibits IL2 Production	inhibits	0.077	1	0.812	0.929	0.357	1
+PRDM1	IL2	Gong & Malek, Cytokine-Dependent Blimp-1 Expression in Activated T Cells Inhibits IL2 Production	inhibits	0	0.154	0.438	0.5	0.75	1
+PRDM1	MYC	lin et al, 1997, Repression of cmyc transcription by PRDM1, an inducer of terminal B cell differentiation	inhibits	0.846	1	0.938	0.643	0.786	0.737
+PRDM1	NFATC1	Lu et al, 2014, Blimp-1 represses CD8 T cell expression of PD-1 using a feed-forward transcriptional circuit during acute viral infection	inhibits	0.308	0.154	0	0.286	0.107	0.211
+PRDM1	PDCD1	Lu et al, 2014, Blimp-1 represses CD8 T cell expression of PD-1 using a feed-forward transcriptional circuit during acute viral infection	inhibits	0	0	0	0.393	0.143	0.105
+PRDM1	TCF7	Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	inhibits	1	1	1	0.857	0.786	1
+PRKCQ	NFKB1	Lin et al, 2000, Protein kinase Ctheta participates in NFkappa B activation induced by CD3CD28 costimulation through selective activation of ikappa B kinase beta	promotes	1	0.923	0.688	0.536	0.679	0.895
+PRKCQ	RELA	Lin et al, 2000, Protein kinase Ctheta participates in NFkappa B activation induced by CD3CD28 costimulation through selective activation of ikappa B kinase beta	promotes	1	0.462	0.812	0.607	0.857	0.947
+REL	IRF4	Shaffer et al, IRF4: Immunity. Malignancy! Therapy?	promotes	0.615	0.538	0.438	0.393	0.429	0.368
+RELA	IL2	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0	0.615	0.375	0.5	0.571	0.632
+RELA	IL2RB	Liao et al, 2013, Interleukin2 at the Crossroads of Effector Responses, Tolerance, and Immunotherapy	promotes	0	0.615	0.375	0.464	0.536	0.316
+RELA	IRF4	Shaffer et al, IRF4: Immunity. Malignancy! Therapy?	promotes	0	0.615	0.25	0.5	0.286	0.368
+RELA	PDCD1	Bally et al, 2016, Genetic and Epigenetic Regulation of PDCD1 Expression 	promotes	0	0.615	0.062	0.393	0.107	0.263
+RELA	PRDM1	Martins and Calame, 2008, Regulation and Functions of PRDM1 in T and B Lymphocytes	promotes	0	0.615	0.062	0.429	0.179	0.368
+RELB	IRF4	Shaffer et al, IRF4: Immunity. Malignancy! Therapy?	promotes	0.154	0.462	0.438	0.357	0.464	0.263
+RUNX3	BATF	Karuchi et al, 2014, The transcription factor BATF operates as an essential differentiation checkpoint in early effector CD8+ T cells	promotes	0	0.538	0	0	0	0.158
+RUNX3	IFNG	Pham et al, 2012, Twist1 Regulates Ifng Expression in Th1 Cells by Interfering with Runx3 Function	promotes	0	0.538	0	0	0	0.895
+SLC39A14	ZN	Jeong & Eide, 2013, The SLC39 family of zinc transporters	promotes	0	0	0	0	0	0
+SLC39A8	ZN	Jeong & Eide, 2013, The SLC39 family of zinc transporters	promotes	0	0	0	0	0	0
+STAT1	BCL6	Nakayamada et al, 2014, Type I IFN induces binding of STAT1 to Bcl6: divergent roles of STAT family transcription factors in the T follicular helper cell genetic program Zhou et al, 2005, Induction of BCL6 gene expression by interferongamma and identifica	promotes	0.769	0.846	0.5	0.786	0.786	0.947
+STAT1	CXCR5	Nakayamada et al, 2014, Type I IFN induces binding of STAT1 to Bcl6: divergent roles of STAT family transcription factors in the T follicular helper cell genetic program Zhou et al, 2005, Induction of BCL6 gene expression by interferongamma and identifica	inhibits	0.231	0.308	0.625	0.393	0.464	0.053
+STAT1	PDCD1	Nakayamada et al, 2014, Type I IFN induces binding of STAT1 to Bcl6: divergent roles of STAT family transcription factors in the T follicular helper cell genetic program Zhou et al, 2005, Induction of BCL6 gene expression by interferongamma and identifica	promotes	0.846	0.154	0.375	0.357	0.536	0.158
+STAT2	BCL6	Nakayamada et al, 2014, Type I IFN induces binding of STAT1 to Bcl6: divergent roles of STAT family transcription factors in the T follicular helper cell genetic program Zhou et al, 2005, Induction of BCL6 gene expression by interferongamma and identifica	promotes	0.308	0.769	0	0	0	0.789
+STAT3	BATF	Karuchi et al, 2014, The transcription factor BATF operates as an essential differentiation checkpoint in early effector CD8+ T cells	promotes	0.077	0.692	0.75	0.5	0.571	0.211
+STAT3	FOXO1	Oh et al, STAT3 Protein Promotes T-cell Survival and Inhibits Interleukin-2 Production through Up-regulation of Class O Forkhead Transcription Factors	promotes	0.923	0.308	0	0	0	0.421
+STAT4	IFNG	Ramos et al, IFN-a  Is Not Sufficient to Drive Th1 Development Due to Lack of Stable T-bet Expression	promotes	0.615	0.692	0.438	0.929	0.643	0.105
+STAT4	IFNGR1	Ramos et al, IFN-a  Is Not Sufficient to Drive Th1 Development Due to Lack of Stable T-bet Expression	promotes	0.308	0.385	0.75	0.893	0.893	0.105
+STAT4	IFNGR2	Ramos et al, IFN-a  Is Not Sufficient to Drive Th1 Development Due to Lack of Stable T-bet Expression	promotes	0.385	0.308	0	0	0	0.632
+STAT4	STAT1	Gil et al, 2012, Regulating type 1 IFN effects in CD8 T cells during viral infections: changing STAT4 and STAT1 expression for function	inhibits	0.231	0.538	0.062	0.821	0.429	0.053
+STAT4	TBX21	Ramos et al, IFN-a  Is Not Sufficient to Drive Th1 Development Due to Lack of Stable T-bet Expression	promotes	0	0	0	0	0	0
+TBX21	BCL6	Pepper et al, 2011, Opposing Signals from the Bcl6 Transcription Factor and the Interleukin-2 Receptor Generate T Helper 1 Central and Effector Memory Cells	inhibits	0	0	0	0	0	0
+TBX21	BTLA	Kao et al, Transcription factor T-bet represses expression of the inhibitory receptor PD-1 and sustains virus-specific CD8+ T cell responses during chronic infection	inhibits	0	0	0	0	0	0
+TBX21	CD160	Kao et al, Transcription factor T-bet represses expression of the inhibitory receptor PD-1 and sustains virus-specific CD8+ T cell responses during chronic infection	inhibits	0	0	0	0	0	0
+TBX21	HAVCR2	Anderson et al, 210, T-bet, a Th1 transcription factor regulates the expression of Tim-3	promotes	0	0	0	0	0	0
+TBX21	IFNG	Pham et al, 2012, Twist1 Regulates Ifng Expression in Th1 Cells by Interfering with Runx3 Function	promotes	0	0	0	0	0	0
+TBX21	IL2RB	Lazarevic et al, 2013, T-bet: a bridge between innate and adaptive immunity	promotes	0	0	0	0	0	0
+TBX21	LAG3	Kao et al, Transcription factor T-bet represses expression of the inhibitory receptor PD-1 and sustains virus-specific CD8+ T cell responses during chronic infection	inhibits	0	0	0	0	0	0
+TBX21	PDCD1	Kao et al, Transcription factor T-bet represses expression of the inhibitory receptor PD-1 and sustains virus-specific CD8+ T cell responses during chronic infection	inhibits	0	0	0	0	0	0
+TBX21	RUNX3	Pham et al, 2012, Twist1 Regulates Ifng Expression in Th1 Cells by Interfering with Runx3 Function	promotes	0	0	0	0	0	0
+TBX21	ZEB2	Omilusik et al, 2015, Transcriptional repressor ZEB2 promotes terminal differentiation of CD8+ effector and memory T cell populations during infection	promotes	0	0	0	0	0	0
+TCF3	CXCR5	Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	promotes	0	0.769	0.5	0.786	0.607	0.579
+TCF3	TCF7	Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	promotes	0.923	0.923	0.5	0.429	0.464	0.579
+TCF7	BCL6	Xu ey al, 2015, The transcription factor TCF-1 initiates the differentiation of TFH cells during acute viral infection	promotes	0.385	1	0.5	0.679	0.536	1
+TCF7	CXCR5	Choi et al, 2015, EF1 and TCF7 orchestrate T(FH) differentiation by regulating differentiation circuits upstream of the transcriptional repressor Bcl6	promotes	0.077	0.846	0	0.571	0.286	1
+TCF7	EOMES	Zhou et al, 2010, Differentiation and Persistence of Memory CD8A+ T Cells Depend on T Cell Factor 1	promotes	0.077	0.077	0	0.214	0.357	1
+TCF7	GATA3	Yu et al, T cell factor 1 initiates the T helper type 2 fate by inducing the transcription factor GATA-3 and repressing interferon-g	promotes	1	0.385	0.312	0.429	0.929	0.105
+TCF7	GZMA	Zhou et al, 2010, Differentiation and Persistence of Memory CD8A+ T Cells Depend on T Cell Factor 1	inhibits	1	1	1	0.679	0.714	1
+TCF7	GZMB	Zhou et al, 2010, Differentiation and Persistence of Memory CD8A+ T Cells Depend on T Cell Factor 1	inhibits	1	1	1	0.786	0.821	1
+TCF7	IFNG	Yu et al, T cell factor 1 initiates the T helper type 2 fate by inducing the transcription factor GATA-3 and repressing interferon-g	inhibits	1	1	1	0.786	0.179	1
+TCF7	IFNGR1	Yu et al, T cell factor 1 initiates the T helper type 2 fate by inducing the transcription factor GATA-3 and repressing interferon-g	inhibits	0.077	0.385	0.188	0.75	0.286	1
+TCF7	IFNGR2	Yu et al, T cell factor 1 initiates the T helper type 2 fate by inducing the transcription factor GATA-3 and repressing interferon-g	inhibits	0	0	0	0	0	0.263
+TCF7	KLRG1	Zhou et al, 2010, Differentiation and Persistence of Memory CD8A+ T Cells Depend on T Cell Factor 1	inhibits	1	1	0.875	0.786	0.286	1
+TCF7	MYC	Zhou et al, 2010, Differentiation and Persistence of Memory CD8A+ T Cells Depend on T Cell Factor 1	promotes	0.846	1	0.938	0.571	0.857	0.737
+TCF7	PRDM1	Leong et al, 2016, CXCR5+ follicular cytotoxic T cells control viral infection in B cell follicles	inhibits	0	0	0	0.143	0.214	0
+TCF7	PRF1	Xing et al, Tcf1 and Lef1 transcription factors establish CD8+ T cell identity through intrinsic HDAC activity	inhibits	1	1	1	0.786	0.464	0.947
+TET1	DNMT3A	Tsagaratou et al, 2017, TET Methylcytosine Oxidases in T Cell and B Cell Development and Function. Tsagaratou et al, 2016, TET proteins regulate the lineage specification and TCR-mediated expansion of iNKT cells	inhibits	0.077	0.308	0.188	0.321	0.5	0.474
+TET1	DNMT3B	Tsagaratou et al, 2017, TET Methylcytosine Oxidases in T Cell and B Cell Development and Function. Tsagaratou et al, 2016, TET proteins regulate the lineage specification and TCR-mediated expansion of iNKT cells	inhibits	0.846	0.923	0	0	0	0.789
+TET1	DNMT3L	Tsagaratou et al, 2017, TET Methylcytosine Oxidases in T Cell and B Cell Development and Function. Tsagaratou et al, 2016, TET proteins regulate the lineage specification and TCR-mediated expansion of iNKT cells	inhibits	0.385	0.231	0	0	0	0.368
+TET1	PDCD1	McPherson et al, 2014, Epigenetic modification of the PD-1 (Pdcd1) promoter in effector CD4+ T cells tolerized by peptide immunotherapy	promotes	0	0	0.75	0.714	0.286	0.105
+TET2	DNMT3A	Tsagaratou et al, 2017, TET Methylcytosine Oxidases in T Cell and B Cell Development and Function. Tsagaratou et al, 2016, TET proteins regulate the lineage specification and TCR-mediated expansion of iNKT cells	inhibits	0.077	0.154	0	0	0	0.579
+TET2	DNMT3B	Tsagaratou et al, 2017, TET Methylcytosine Oxidases in T Cell and B Cell Development and Function. Tsagaratou et al, 2016, TET proteins regulate the lineage specification and TCR-mediated expansion of iNKT cells	inhibits	0.846	0.462	0	0	0	0.368
+TET2	DNMT3L	Tsagaratou et al, 2017, TET Methylcytosine Oxidases in T Cell and B Cell Development and Function. Tsagaratou et al, 2016, TET proteins regulate the lineage specification and TCR-mediated expansion of iNKT cells	inhibits	0.385	0.231	0	0	0	0.211
+TET2	PDCD1	McPherson et al, 2014, Epigenetic modification of the PD-1 (Pdcd1) promoter in effector CD4+ T cells tolerized by peptide immunotherapy	promotes	0	0.462	0	0	0	0.421
+TET3	DNMT3A	Tsagaratou et al, 2017, TET Methylcytosine Oxidases in T Cell and B Cell Development and Function. Tsagaratou et al, 2016, TET proteins regulate the lineage specification and TCR-mediated expansion of iNKT cells	inhibits	0.077	0.308	0	0	0	0.421
+TET3	DNMT3B	Tsagaratou et al, 2017, TET Methylcytosine Oxidases in T Cell and B Cell Development and Function. Tsagaratou et al, 2016, TET proteins regulate the lineage specification and TCR-mediated expansion of iNKT cells	inhibits	0.846	0.923	0	0	0	0.526
+TET3	DNMT3L	Tsagaratou et al, 2017, TET Methylcytosine Oxidases in T Cell and B Cell Development and Function. Tsagaratou et al, 2016, TET proteins regulate the lineage specification and TCR-mediated expansion of iNKT cells	inhibits	0.385	0.231	0	0	0	0.316
+TET3	PDCD1	McPherson et al, 2014, Epigenetic modification of the PD-1 (Pdcd1) promoter in effector CD4+ T cells tolerized by peptide immunotherapy	promotes	0	0	0	0	0	0.368
+TIGIT	MAPK1	Martinet & Smyth, 2015, Balancing natural killer cell activation through paired receptors	inhibits	0	0	0	0	0	0
+TIGIT	MAPK3	Martinet & Smyth, 2015, Balancing natural killer cell activation through paired receptors	inhibits	0	0	0	0	0	0
+TIGIT	NFKB1	Martinet & Smyth, 2015, Balancing natural killer cell activation through paired receptors	inhibits	0	0	0	0	0	0
+TIGIT	NFKB2	Martinet & Smyth, 2015, Balancing natural killer cell activation through paired receptors	inhibits	0	0	0	0	0	0
+TIGIT	PIK3CA	Martinet & Smyth, 2015, Balancing natural killer cell activation through paired receptors	inhibits	0	0	0	0	0	0
+TIGIT	PIK3CB	Martinet & Smyth, 2015, Balancing natural killer cell activation through paired receptors	inhibits	0	0	0	0	0	0
+TIGIT	PIK3CG	Martinet & Smyth, 2015, Balancing natural killer cell activation through paired receptors	inhibits	0	0	0	0	0	0
+TIGIT	REL	Martinet & Smyth, 2015, Balancing natural killer cell activation through paired receptors	inhibits	0	0	0	0	0	0
+TIGIT	RELA	Martinet & Smyth, 2015, Balancing natural killer cell activation through paired receptors	inhibits	0	0	0	0	0	0
+TIGIT	RELB	Martinet & Smyth, 2015, Balancing natural killer cell activation through paired receptors	inhibits	0	0	0	0	0	0
+TNF	NFKB1	Beyer et al, 2016, Tumor-necrosis factor impairs CD4+ T cell–mediated immunological control in chronic viral infection	promotes	0.231	1	0.125	0.357	0.214	0.789
+TNF	NFKB2	Beyer et al, 2016, Tumor-necrosis factor impairs CD4+ T cell–mediated immunological control in chronic viral infection	promotes	0.615	0.538	0.812	0.714	0.786	1
+TNF	REL	Beyer et al, 2016, Tumor-necrosis factor impairs CD4+ T cell–mediated immunological control in chronic viral infection	promotes	0.846	0.462	0.938	0.679	0.821	0.947
+TNF	RELA	Beyer et al, 2016, Tumor-necrosis factor impairs CD4+ T cell–mediated immunological control in chronic viral infection	promotes	0.231	0.385	0.25	0.571	0.321	0.632
+TNF	RELB	Beyer et al, 2016, Tumor-necrosis factor impairs CD4+ T cell–mediated immunological control in chronic viral infection	promotes	0.385	0.538	0.812	0.714	0.786	0.947
+TNFRSF1A	TNF	Beyer et al, 2016, Tumor-necrosis factor impairs CD4+ T cell–mediated immunological control in chronic viral infection	promotes	0.154	0.538	0.688	0.571	0.607	0.316
+TNFRSF1B	TNF	Beyer et al, 2016, Tumor-necrosis factor impairs CD4+ T cell–mediated immunological control in chronic viral infection	promotes	0.769	0	0.688	0.607	0.429	0.158
+TNFRSF9	CD247	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.062	0.643	0.107	0
+TNFRSF9	CD28	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.286	0.393	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3D	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.25	0.643	0.214	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3E	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.75	0.571	0.679	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD3G	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0.562	0.571	0.643	0
+TNFRSF9	CD8A	Nam et al, 2005, Cross-Linking of 4-1BB Activates TCR-Signaling Pathways in CD8+ T Lymphocytes	promotes	0	0	0	0.607	0.214	0
+TNFRSF9	FOXO1	Lee et al , 2013, 4-1BB Signaling Activates the T Cell Factor 1 Effector/ß-Catenin Pathway with Delayed Kinetics via ERK Signaling and Delayed PI3K/AKT Activation to Promote the Proliferation of CD8+ T Cells	inhibits	0	0	0	0	0	0
+ZAP70	Adhesion	Muller and Rao, 2008, NFAT, immunity and cancer: a transcription factor comes of age	promotes	0	0	0	0	0	0
+ZAP70	CA	Muller and Rao, 2008, NFAT, immunity and cancer: a transcription factor comes of age	promotes	0	0	0	0	0	0
+ZAP70	HRAS	Muller and Rao, 2008, NFAT, immunity and cancer: a transcription factor comes of age	promotes	0	0	0	0	0	0
+ZAP70	KRAS	Muller and Rao, 2008, NFAT, immunity and cancer: a transcription factor comes of age	promotes	0	0	0.375	0.679	0.5	0
+ZAP70	NRAS	Muller and Rao, 2008, NFAT, immunity and cancer: a transcription factor comes of age	promotes	0	0	0.312	0.357	0.821	0
+ZAP70	PRKCQ	Dustin, PKC-?: hitting the bull’s eye, 20011. Pollizzi and Powell, 2014, Integrating canonical and metabolic  signalling programmes in the regulation of T cell responses	promotes	0	0	0.375	0.821	0.357	0
+ZEB1	IL2	Katsuyama et al, 2016, Downregulation of miR-200a-3p, Targeting CtBP2 Complex, Is Involved in the Hypoproduction of IL-2 in Systemic Lupus Erythematosus–Derived T Cells	inhibits	1	0.846	0.562	0.607	0.643	0.105
+ZEB2	IL2	Katsuyama et al, 2016, Downregulation of miR-200a-3p, Targeting CtBP2 Complex, Is Involved in the Hypoproduction of IL-2 in Systemic Lupus Erythematosus–Derived T Cells	inhibits	0	0.154	0	0	0	0.474
+ZEB2	TBX21	Dominguez et al, 2015, The transcription factors ZEB2 and T-bet cooperate to program cytotoxic T cell terminal differentiation in response to LCMV viral infection	promotes	0	0	0	0	0	0
+ZN	MT1	Lazarczyk et al, 2012, EVER Proteins, Key Elements of the Natural AntiHuman Papillomavirus Barrier, Are Regulated upon TCell Activation	promotes	0	0	0	0	0	0
+ZN	MT2	Lazarczyk et al, 2012, EVER Proteins, Key Elements of the Natural AntiHuman Papillomavirus Barrier, Are Regulated upon TCell Activation	promotes	0	0	0	0	0	0
