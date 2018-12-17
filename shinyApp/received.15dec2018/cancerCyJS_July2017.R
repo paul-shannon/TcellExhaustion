@@ -5,7 +5,7 @@ library(RCyjs)
 stopifnot(packageVersion("RCyjs") >= "1.7.15")
 #------------------------------------------------------------------------------------------------------------------------
 
-setwd("/Volumes/hbolouri/TCE/CyJS/July2017")
+#setwd("/Volumes/hbolouri/TCE/CyJS/July2017")
 # setwd("/Volumes/bolouri_h/user/hbolouri/TCE/CyJS/July2017")
 
 # nodeAnnotationFile <- "nodes.txt"
@@ -67,10 +67,10 @@ score.conditions <- grep("Scores", colnames(tbl.edges), value=TRUE)
 
 setNodeAttributes(rcy, "expression", tbl.nodes$Symbol, tbl.nodes[, expression.conditions[1]])
 
-if (length(expression.conditions) == length(score.conditions)) { 
+if (length(expression.conditions) == length(score.conditions)) {
 for (i in 1:length(expression.conditions)) {
      expression.condition <- expression.conditions[i]
-     score.condition <- score.conditions[i]      
+     score.condition <- score.conditions[i]
      printf("displaying node condition %s, edge condition %s", expression.condition, score.condition)
 
      nodeNames <- tbl.nodes$Symbol
