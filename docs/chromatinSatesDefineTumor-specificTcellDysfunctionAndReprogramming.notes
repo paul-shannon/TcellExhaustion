@@ -1,5 +1,4 @@
 *------------------------------------------------------------------------------------------------------------------------
-
 * cd8: CD8+ (cytotoxic) T cells, like CD4+ Helper T cells, are generated in the thymus and express the T-cell
   receptor. However, rather than the CD4 molecule, cytotoxic T cells express a dimeric co-receptor, CD8, usually
   composed of one CD8α and one CD8β chain. CD8+ T cells recognise peptides presented by MHC Class I molecules, found on
@@ -10,6 +9,17 @@
   intracellular pathogens, including viruses and bacteria, and for tumour surveillance. When a CD8+ T cell recognises
   its antigen and becomes activated, it has three major mechanisms to kill infected or malignant cells. The first is
   secretion of cytokines, primarily TNF-α and IFN-γ, which have anti-tumour and anti-viral microbial effects.
+  
+  CD8 (cluster of differentiation 8) is a transmembrane glycoprotein that serves as a co-receptor for the T cell
+  receptor (TCR). Like the TCR, CD8 binds to a major histocompatibility complex (MHC) molecule, but is specific for the
+  class I MHC protein.[2] There are two isoforms of the protein, alpha and beta, each encoded by a different gene. In
+  humans, both genes are located on chromosome 2 in position 2p12.
+
+  The main function of MHC molecules is to bind to antigens derived from pathogens and display them on the cell surface
+  for recognition by the appropriate T-cells.[1] MHC molecules mediate interactions of leukocytes, also called white
+  blood cells (WBCs), which are immune cells, with other leukocytes or with body cells. The MHC determines compatibility
+  of donors for organ transplant, as well as one's susceptibility to an autoimmune disease via crossreacting
+  immunization. The human MHC is also called the HLA (human leukocyte antigen) complex (often just the HLA).
 
 *------------------------------------------------------------------------------------------------------------------------
 * thymus
@@ -31,6 +41,205 @@
   begins to atrophy and thymic stroma is mostly replaced by adipose (fat) tissue. Nevertheless, residual T lymphopoiesis
   continues throughout adult life.
 
+*------------------------------------------------------------------------------------------------------------------------
+* immune checkpoint, checkpoint blockade
+
+  schietinger 2017 abstract: 
+
+    Tumour-specific CD8 T cells in solid tumours are dysfunctional, allowing tumours to progress. The epigenetic
+    regulation of T cell dysfunction and therapeutic reprogrammability (for example, to immune checkpoint blockade) is
+    not well understood.
+
+  s2017.intro: the clinical success of immune checkpoint blockade (PD1/PDL1, CTLA4 blocking antibodies) and adoptive
+  T cell terapy in a subset of cancer patients demonstrates the great potential of TST (of tumor-specific cd8 T cells).
+  
+  Immune checkpoint blockade removes inhibitory signals of T-cell activation, which enables tumor-reactive T cells to
+  overcome regulatory mechanisms and mount an effective antitumor response (1–3). Such regulatory mechanisms normally
+  maintain immune responses within a desired physiologic range and protect the host from autoimmunity.
+
+  Immune checkpoints are regulators of the immune system. These pathways are crucial for self-tolerance, which prevents
+  the immune system from attacking cells indiscriminately.
+
+  Inhibitory checkpoint molecules are targets for cancer immunotherapy due to their potential for use in multiple types
+  of cancers. Currently approved checkpoint inhibitors block CTLA4 and PD-1 and PD-L1. For the related basic science
+  discoveries, James P. Allison and Tasuku Honjo won the Tang Prize in Biopharmaceutical Science and the Nobel Prize in
+  Physiology or Medicine in 2018
+
+
+*------------------------------------------------------------------------------------------------------------------------
+* PD1 with ligand PDL1 
+
+  PD-1/PD-L1 interaction is known to drive T cell dysfunction, which can be blocked by anti-PD-1/PD-L1 antibodies.
+
+  PD-1 is a checkpoint protein on immune cells called T cells. It normally acts as a type of “off switch” that helps
+  keep the T cells from attacking other cells in the body. It does this when it attaches to PD-L1, a protein on some
+  normal (and cancer) cells. When PD-1 binds to PD-L1, it basically tells the T cell to leave the other cell alone. Some
+  cancer cells have large amounts of PD-L1, which helps them evade immune attack.
+
+  Monoclonal antibodies that target either PD-1 or PD-L1 can block this binding and boost the immune response against
+  cancer cells. These drugs have shown a great deal of promise in treating certain cancers.
+
+
+
+  Ligation of programmed cell death protein 1 (PD-1, also known as CD279) with PD-1 ligand 1 (PD-L1, also called
+  B7-H1 or CD274) activates a critical immune checkpoint leading to T cell dysfunction, exhaustion, and
+  tolerance; high-affinity anti-PD-1 or anti-PD-L1 monoclonal antibodies (mAbs) which block PD-1–PD-L1 interaction,
+  can reverse the immune checkpoint, releasing the brake on T cell responses. However, neither PD-1 nor PD-L1 expression
+  is specific for the reversible T cell dysfunction state, and the effect of PD-1/PD-L1 blockade can be
+  context-dependent. In addition, PD-1 signaling and the mechanism of action of anti-PD-1/L1 mAbs are not completely
+  understood.
+
+*------------------------------------------------------------------------------------------------------------------------
+* CTL4A
+
+  CTLA4 or CTLA-4 (cytotoxic T-lymphocyte-associated protein 4), also known as CD152 (cluster of differentiation 152),
+  is a protein receptor that functions as an immune checkpoint and downregulates immune responses. CTLA4 is
+  constitutively expressed in regulatory T cells but only upregulated in conventional T cells after activation – a
+  phenomenon which is particularly notable in cancers.[4] It acts as an "off" switch when bound to CD80 or CD86 on the
+  surface of antigen-presenting cells.
+
+*------------------------------------------------------------------------------------------------------------------------
+* TST tummor-specific T cells
+
+    TOX is a critical regulator of tumour-specific T cell differentiation [scheitinger 2019 nature]
+
+  Tumour-specific CD8 T cell dysfunction is a differentiation state that is distinct from the functional effector or
+  memory T cell states1,2,3,4,5,6. Here we identify the nuclear factor TOX as a crucial regulator of the
+  differentiation of tumour-specific T (TST) cells. We show that TOX is highly expressed in dysfunctional TST cells
+  from tumours and in exhausted T cells during chronic viral infection. Expression of TOX is driven by chronic T cell
+  receptor stimulation and NFAT activation. Ectopic expression of TOX in effector T cells in vitro induced a
+  transcriptional program associated with T cell exhaustion. Conversely, deletion of Tox in TST cells in tumours
+  abrogated the exhaustion program: Tox-deleted TST cells did not upregulate genes for inhibitory receptors (such as
+  Pdcd1, Entpd1, Havcr2, Cd244 and Tigit), the chromatin of which remained largely inaccessible, and retained high
+  expression of transcription factors such as TCF-1. Despite their normal, ‘non-exhausted’ immunophenotype, Tox-deleted
+  TST cells remained dysfunctional, which suggests that the regulation of expression of inhibitory receptors is
+  uncoupled from the loss of effector function. Notably, although Tox-deleted CD8 T cells differentiated normally to
+  effector and memory states in response to acute infection, Tox-deleted TST cells failed to persist in tumours. We
+  hypothesize that the TOX-induced exhaustion program serves to prevent the overstimulation of T cells and
+  activation-induced cell death in settings of chronic antigen stimulation such as cancer.
+
+*------------------------------------------------------------------------------------------------------------------------
+* non-responsive TST:  heritable dysfunctional state epigenetically imprinted  s.2007.intro
+
+  We previously demonstrated that early during tumorigenesis, TST become non-responsive, exhibiting the phenotypic,
+  functional, and transcriptional features of tumor-reactive tumor- infiltrating lymphocytes (TIL) from late-stage human
+  solid tumors6. TST dysfunction is initially reversible but ultimately becomes irreversible, even after removal of
+  dysfunctional T cells from the tumor microenvironment and multiple rounds of cell division6. We hypothesized that this
+  heritable, signal-independent dysfunctional state is epigenetically imprinted.
+
+*------------------------------------------------------------------------------------------------------------------------
+* TAG:  SV40 large T antigen
+
+   SV40 large T antigen (Simian Vacuolating Virus 40 TAg) is a hexamer protein that is a dominant-acting oncoprotein
+   derived from the polyomavirus SV40. TAg is capable of inducing malignant transformation of a variety of cell
+   types. The transforming activity of TAg is due in large part to its perturbation of the retinoblastoma (pRb)[1] and
+   p53 tumor suppressor proteins.[2] In addition, TAg binds to several other cellular factors, including the
+   transcriptional co-activators p300 and CBP, which may contribute to its transformation function.[3]
+
+   TAg is a product of an early gene transcribed during viral infection by SV40, and is involved in viral genome
+   replication and regulation of host cell cycle. SV40 is a double-stranded, circular DNA virus belonging to the
+   Polyomaviridae (earlier Papovavirus) family, Orthopolyomavirus genus. Polyomaviruses infect a wide variety of
+   vertebrates and cause solid tumours at multiple sites. SV40 was isolated by Sweet and Maurice Hilleman in 1960 in
+   primary monkey kidney cell cultures being used to grow Sabin OPV.[4]
+
+   SV40 large T antigen-specific human T cell memory responses.   J Med Virol. 2008 Aug
+
+   The continued presence of simian virus 40 (SV40), a monkey polyomavirus, in man is confirmed by the regular detection
+   of SV40-specific antibodies in 5-10% of children who are unlikely to have received contaminated polio-vaccines. The
+   aim of our experiments was to find cellular immunological evidence of SV40 infection in humans by testing memory T
+   cell responses to SV40 large T antigen (Tag).
+
+*------------------------------------------------------------------------------------------------------------------------
+* congenic
+
+  Congenic strains are generated in the laboratory by mating two inbred strains (usually rats or mice), and
+  back-crossing the descendants 5–10 generations with one of the original strains, known as the recipient
+  strain. Typically selection for either phenotype or genotype is performed prior to each back-cross generation. In this
+  manner either an interesting phenotype, or a defined chromosomal region assayed by genotype, is passed from the donor
+  strain onto an otherwise uniform recipient background. Congenic mice or rats can then be compared to the pure
+  recipient strain to determine whether they are phenotypically different if selection was for a genotypic region, or to
+  identify the critical genetic locus, if selection was for a phenotype.
+
+*------------------------------------------------------------------------------------------------------------------------
+* SV40
+
+  SV40 consists of an unenveloped icosahedral virion with a closed circular dsDNA genome[18] of 5.2 kb.[19] The virion
+  adheres to cell surface receptors of MHC class I by the virion glycoprotein VP1. Penetration into the cell is through
+  a caveolin vesicle. Inside the cell nucleus, the cellular RNA polymerase II acts to promote early gene
+  expression. This results in an mRNA that is spliced into two segments. The small and large T antigens result from
+  this. The large T antigen has two functions: 5% goes to the plasma cell membrane and 95% returns to the nucleus. Once
+  in the nucleus the large T antigen binds three viral DNA sites, I, II and III. Binding of sites I and II autoregulates
+  early RNA synthesis. Binding to site II takes place in each cell cycle. Binding site I initiates DNA replication at
+  the origin of replication. Early transcription gives two spliced RNAs that are both 19s. Late transcription gives both
+  a longer 16s, which synthesizes the major viral capsid protein VP1; and the smaller 19s, which gives VP2 and VP3
+  through leaky scanning. All of the proteins, besides the 5% of large T, return to the nucleus because assembly of the
+  viral particle happens there. Eventual release of the viral particles is cytolytic and results in cell death.
+
+
+*------------------------------------------------------------------------------------------------------------------------
+* T-antigen transgenic mouse models: SV40 T antigen mimics tumorigenic processes
+
+  T-antigen transgenic mouse models
+
+  Two major very exciting areas of scientific research came together in the early 1980s and resulted in the production
+  of models to investigate cancer. On one hand, the technology to produce transgenic mice was being developed rapidly
+  and, at the same time, many viral and cellular oncogenes were being discovered and subsequently cloned. It soon
+  became evident that the expression of SV40 sequences including the large T antigen (T antigen) in mice resulted in
+  tumor development in particular tissues [2, 3]. Up until that point cancer models had been based on cell lines
+  obtained from human or animal tumors and maintained in tissue culture, or from the subcutaneous inoculation of those
+  cells into immunodeficient mice. Although obviously useful, these models did not offer a good approach to
+  understanding the genetics and the molecular pathways involved in different types of tumorigenesis, nor to the
+  relevance to particular tumors and their site of origin “in vivo”. The arrival of transgenic mice expressing T antigen
+  made clear, not only that T antigen expression was capable of driving resting cells into active proliferation status,
+  but also that this trait was hereditary and the mouse progeny presented cancer predisposition. As a result, SV40 T
+  antigen has been expressed in multiple tissues of transgenic mice to mimic tumorigenic processes.
+
+*------------------------------------------------------------------------------------------------------------------------
+* T cell types:  naive, effector, memory?
+
+*------------------------------------------------------------------------------------------------------------------------
+* the experiement: N, E5, E7, M
+  
+   We transferred congenically-marked naïve (N; CD44lo CD62Lhi) TCRTAG from TCRTAG transgenic mice (specific for SV40
+   large T antigen epitope I (TAG)) into wild-type C57BL/6 mice, which were immunized one day later with recombinant
+   Listeria monocytogenes strain expressing TAG (LmTAG)6,13. TCRTAG were re-isolated, phenotypically and functionally
+   characterized, and subjected to ATAC-Seq and RNA-Seq
+
+    [from 2018 journal of immunology paper:
+
+       we generated an in vivo tumor model expressing altered peptide ligands (APL) derived from SV40 large T antigen
+       epitope I (TAG) and recognized by TAG-specific transgenic CD8 T cells (TCRTAG)
+
+   N: naive   CD44.lo CD62L.hi
+  E5: effector, 5 days
+  E7: effector, 7 days
+   M: 60+ days after immunization
+
+  all expressed characteristic features:
+     activation, homing and cytokine receptors: CD44, CD62L, IL7R
+     TFs: TBET
+     cytotoxix molecules: GZMB CD107
+     proinflammatory cytokines: IFN.gamma, TNF.alpha
+
+   chromatin remodeling:
+     dramatic: N to E5
+     less so: E5 to E7 to M
+
+*------------------------------------------------------------------------------------------------------------------------
+* chromatin state dynamics of TST dysfunction: page 3
+
+   two discrete states
+    day 5: massive chromatin remodeling by this point (initial dysfunctional state)
+    7-14: second wave of remodeling (later dysfunctional state 2)
+    14-60+:  little or no change, even with progression to established tumors at 60+
+
+   Many of the ATAC-Seq peaks gained or lost were in intronic and intergenic regions (potential enhancer peaks), while
+   peaks present in all CD8 T cells were in promoter regions (Extended Data Fig. 4b, bottom); this pattern was also seen
+   in functional CD8 T cell differentiation (Extended Data Fig. 4b, top).
+
+*------------------------------------------------------------------------------------------------------------------------
+*------------------------------------------------------------------------------------------------------------------------
+*------------------------------------------------------------------------------------------------------------------------
 *------------------------------------------------------------------------------------------------------------------------
 *------------------------------------------------------------------------------------------------------------------------
 *------------------------------------------------------------------------------------------------------------------------
