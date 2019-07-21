@@ -1,4 +1,43 @@
 *------------------------------------------------------------------------------------------------------------------------
+*------------------------------------------------------------------------------------------------------------------------
+* discussion section
+
+  In this study, we define for the first time the chromatin state dynamics underlying tumor-specific T cell dysfunction
+  over the course of tumorigenesis. Naïve tumor-specific T cells (TST) encountering tumor antigen in pre-malignant
+  lesions differentiated to an initially plastic, therapeutically reprogrammable chromatin state, then transitioned to a
+  fixed dysfunctional chromatin state that did not undergo further remodeling, even with progression to large
+  established tumors (Extended Data Fig. 10e).
+
+  The rapid induction of dysfunction early during tumorigenesis without progression through an effector
+  state resembles peripheral tolerance induction. We identified core elements shared between murine fixed
+  dysfunctional TST and human PD1hi TIL.
+
+  Surprisingly, memory TST differentiated to the same fixed dysfunctional chromatin state in tumors, suggesting that
+  antigen exposure in tumors can overwrite pre-existing epigenetic programs regardless of the initial differentiation
+  state.  We identified surface markers, including CD101 and CD38, which were associated with discrete dysfunctional
+  chromatin states and demarcated reprogrammable from non-reprogrammable PD1hi T cells within heterogeneous TIL
+  populations, a finding of important potential clinical relevance, and human PD1hi TIL showed heterogeneous expression
+  of these markers. In patients who do not respond to immune checkpoint blockade (non-responders), PD1hi TIL may be in
+  a fixed dysfunctional state, in contrast to responders whose PD1hi TIL are in a plastic state, amenable to
+  reprogramming. Our studies on the epigenetic and transcriptional programs underlying TST dysfunctional states and
+  therapeutic reprogrammability point to new targets and strategies to transform TST into potent anti-tumor agents.
+
+*------------------------------------------------------------------------------------------------------------------------
+* peripheral tolerance induction, prevents autoimmune disease: scheitinger 2012
+
+  Rescued Tolerant CD8 T Cells Are Preprogrammed to Reestablish the Tolerant State
+
+  Tolerant self-antigen–specific CD8 T cells fail to proliferate in response to antigen, thereby preventing autoimmune
+  disease. By using an in vivo mouse model, we show that tolerant T cells proliferate and become functional under
+  lymphopenic conditions, even in a tolerogenic environment. However, T cell rescue is only transient, with tolerance
+  reimposed upon lymphorepletion even in the absence of tolerogen (self-antigen), challenging the prevailing paradigm
+  that continuous antigen exposure is critical to maintain tolerance. Genome-wide messenger RNA and microRNA profiling
+  revealed that tolerant T cells have a tolerance-specific gene profile that can be temporarily overridden under
+  lymphopenic conditions but is inevitably reimposed, which suggests epigenetic regulation. These insights into the
+  regulatory mechanisms that maintain or break self-tolerance may lead to new strategies for the treatment of cancer and
+  autoimmunity.
+
+*------------------------------------------------------------------------------------------------------------------------
 * cd8: CD8+ (cytotoxic) T cells, like CD4+ Helper T cells, are generated in the thymus and express the T-cell
   receptor. However, rather than the CD4 molecule, cytotoxic T cells express a dimeric co-receptor, CD8, usually
   composed of one CD8α and one CD8β chain. CD8+ T cells recognise peptides presented by MHC Class I molecules, found on
@@ -41,6 +80,19 @@
   begins to atrophy and thymic stroma is mostly replaced by adipose (fat) tissue. Nevertheless, residual T lymphopoiesis
   continues throughout adult life.
 
+*------------------------------------------------------------------------------------------------------------------------
+* cre-lox recombination
+
+  a sophisticated site-specific recombinase technology that allows DNA modification to be targeted to a specific cell
+  type or to be triggered by a specific external stimulus.
+
+  from the jax lab: enables the  tissue-specific and inducible knockouts and thereby have exquisite control
+  over the location and timing of gene expression – important  when deleting a certain gene everywhere or during
+  development leads to an embryonic lethal phenotype.
+
+  it can be used to turn transgene expression on or off, track individual cells or cell lineages (as in the Brainbow or
+  Confetti mice), generate inversions or translocations, and report gene expression. 
+  
 *------------------------------------------------------------------------------------------------------------------------
 * immune checkpoint, checkpoint blockade
 
@@ -128,7 +180,7 @@
   heritable, signal-independent dysfunctional state is epigenetically imprinted.
 
 *------------------------------------------------------------------------------------------------------------------------
-* TAG:  SV40 large T antigen
+* TAG:  SV40 large T antigen  binds, sequesters, inactivates P53
 
    SV40 large T antigen (Simian Vacuolating Virus 40 TAg) is a hexamer protein that is a dominant-acting oncoprotein
    derived from the polyomavirus SV40. TAg is capable of inducing malignant transformation of a variety of cell
@@ -141,6 +193,24 @@
    Polyomaviridae (earlier Papovavirus) family, Orthopolyomavirus genus. Polyomaviruses infect a wide variety of
    vertebrates and cause solid tumours at multiple sites. SV40 was isolated by Sweet and Maurice Hilleman in 1960 in
    primary monkey kidney cell cultures being used to grow Sabin OPV.[4]
+
+
+   The SV40 large T antigen-p53 complexes bind and activate the insulin-like growth factor-I promoter stimulating cell growth.
+   
+   Inactivation of cellular p53 is a crucial step in carcinogenesis. Accordingly, p53 is inactivated in most human
+   cancers by different mechanisms. In cells infected with DNA tumor viruses, p53 is bound to the viral tumor antigens
+   (Tag). The current "dogma" views the Tag-p53 complexes as a way of sequestering and inactivating p53. Using primary
+   human cells and SV40-transformed human cells, we show that in addition to inactivating p53 tumor suppressor
+   activities, the Tag-p53 complex has growth stimulatory activities that are required for malignant cell growth. We
+   found that in human cells, Tag-p53 complexes regulate transcription of the insulin-like growth factor I (IGF-I) gene
+   by binding to the IGF-I promoter together with pRb and p300. Depletion of p53 leads to structural rearrangements of
+   this multiprotein complex, resulting in IGF-I promoter transcriptional repression and growth arrest. Our data provide
+   a novel mechanistic and biological interpretation of the p53-Tag complexes and of DNA tumor virus transformation in
+   general. In the model we propose, p53 is not a passive inactive partner of Tag. Instead the p53-Tag complex promotes
+   malignant cell growth through its ability to activate the IGF-I signaling pathway.
+
+
+
 
    SV40 large T antigen-specific human T cell memory responses.   J Med Virol. 2008 Aug
 
@@ -197,6 +267,14 @@
 *------------------------------------------------------------------------------------------------------------------------
 * T cell types:  naive, effector, memory?
 
+  excellent summary: T cell responses: naïve to memory and everything in between: 2013
+  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4089090/
+  
+  the major advantages of an adaptive response to the host are twofold. First, it allows the host to form an immune
+  response that is specifically tailored to the invading pathogen. Second, it forms a pool of memory cells from these
+  specific effectors that can last for many years, capable of protecting the host against reinfection by their rapid
+  response.
+
 *------------------------------------------------------------------------------------------------------------------------
 * the experiement: N, E5, E7, M
   
@@ -224,6 +302,51 @@
    chromatin remodeling:
      dramatic: N to E5
      less so: E5 to E7 to M
+
+   -- autochthonous liver cancer model
+
+     We next assessed chromatin state dynamics in TST over the course of tumorigenesis using the previously described
+     tamoxifen (Tam)-inducible, autochthonous liver cancer model in which TAG is a tumor-specific antigen.
+
+     We transferred congenically-marked naïve TCRTAG (N, identical to N in Fig. 1a) into ASTxCre-ERT2 mice 1 day prior
+     to Tam and then analyzed TCRTAG at different time points (Fig. 2a).
+
+     We tested whether accessibility of potential TF targets changed preferentially during differentiation from N to L5 as compared to N to E5 
+
+*------------------------------------------------------------------------------------------------------------------------
+* autochthonous liver cancer model
+
+   Autochthonous liver tumors induce systemic T cell tolerance associated with T cell receptor down-modulation.
+   Hepatology. 2009 Mar;49(3):1058.
+
+   The reason the adaptive immune system fails in advanced liver tumors is largely unclear. To address this question, we
+   have developed a novel murine model that combines c-myc-induced autochthonous tumorigenesis with expression of a
+   cognate antigen, ovalbumin (OVA). When c-myc/OVA transgenic mice were crossed with liver-specific inducer mice,
+   multifocal hepatocellular carcinomas co-expressing OVA developed in a tetracycline-dependent manner with a short
+   latency and 100% penetrance. Transferred OVA-specific T cells, although infiltrating the tumor at high numbers, were
+   hyporesponsive, as evidenced by a lack of in vivo cytotoxicity and interferon gamma production. This allowed the
+   tumor to progress even in the presence of large numbers of antigen-specific T cells and even after vaccination
+   (OVA+CpG-DNA). Interestingly, T cell receptor down-modulation was observed, which may explain antigen-specific
+   hyporesponsiveness. This model is helpful in understanding liver cancer-specific mechanisms of T cell tolerance and
+   dissection of antigen-specific and nonspecific mechanisms of immunotherapies in the preclinical phase.
+
+*------------------------------------------------------------------------------------------------------------------------
+* autochthonous: (of an inhabitant of a place) indigenous rather than descended from migrants or colonists.
+
+  geology: (of a deposit or formation) formed in its present position.
+
+  autocthon (wikipedia):
+
+    in Ancient Greece, the concept of autochthones (from Ancient Greek αὐτός autos "self," and χθών khthon "soil";
+    i.e. "people sprung from earth itself") means the original inhabitants of a country as opposed to settlers, and
+    those of their descendants who kept themselves free from an admixture of foreign peoples.
+
+    In mythology, autochthones are those mortals who have sprung from the soil, rocks and trees. They are rooted and belong to the land eternally.
+
+    An autochthon is not the same as the offspring of Gaia, called gegenes (earth-born), although later the terms have
+    been conflated.  Ancient myth of autochthony in historiography is the belief of the historian or the tribe itself,
+    that they were indigenous, the first humans to inhabit their possessed land. The term occurs firstly in 5th century
+    BC ethnographic passages.
 
 *------------------------------------------------------------------------------------------------------------------------
 * chromatin state dynamics of TST dysfunction: page 3
