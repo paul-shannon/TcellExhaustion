@@ -2,6 +2,7 @@
 * target genes of interest
 
   pd1, eomes, t-bet, ctla4, Cxcl9, Il1r2, and Il7r 
+
 *------------------------------------------------------------------------------------------------------------------------
 * discussion section
 
@@ -26,6 +27,28 @@
   therapeutic reprogrammability point to new targets and strategies to transform TST into potent anti-tumor agents.
 
 *------------------------------------------------------------------------------------------------------------------------
+* pd1 blockade (programmed cell death proten 1, wikipedia)
+
+  pdc1: a negative regulator of immune responses
+
+  An inhibitor that blocks the interaction of PD-L1 with the PD-1 receptor can prevent the cancer from evading the immune system.
+
+  Programmed cell death protein 1, also known as PD-1 and CD279 (cluster of differentiation 279), is a protein on the
+  surface of cells that has a role in regulating the immune system's response to the cells of the human body by
+  down-regulating the immune system and promoting self-tolerance by suppressing T cell inflammatory activity. This
+  prevents autoimmune diseases, but it can also prevent the immune system from killing cancer cells.[5]
+
+  PD-1 is an immune checkpoint and guards against autoimmunity through two mechanisms. First, it promotes apoptosis
+  (programmed cell death) of antigen-specific T-cells in lymph nodes. Second, it reduces apoptosis in regulatory T cells
+  (anti-inflammatory, suppressive T cells).[6][7]
+
+  PD-1 inhibitors, a new class of drugs that block PD-1, activate the immune system to attack tumors and are used to
+  treat certain types of cancer.[5][8]
+
+  The PD-1 protein in humans is encoded by the PDCD1 gene.[9][10] PD-1 is a cell surface receptor that belongs to the
+  immunoglobulin superfamily and is expressed on T cells and pro-B cells.[10] PD-1 binds two ligands, PD-L1 and PD-L2.
+
+*------------------------------------------------------------------------------------------------------------------------
 * peripheral tolerance induction, prevents autoimmune disease: scheitinger 2012
 
   Rescued Tolerant CD8 T Cells Are Preprogrammed to Reestablish the Tolerant State
@@ -39,6 +62,11 @@
   lymphopenic conditions but is inevitably reimposed, which suggests epigenetic regulation. These insights into the
   regulatory mechanisms that maintain or break self-tolerance may lead to new strategies for the treatment of cancer and
   autoimmunity.
+
+
+  lymphophenia: lacking lymphocytes
+  tolerogenic:  state of immune tolerance
+  
 
 *------------------------------------------------------------------------------------------------------------------------
 * Epigenetic stability of exhausted T cells limits durability of reinvigoration by PD-1 blockade.
@@ -118,7 +146,7 @@
     not well understood.
 
   s2017.intro: the clinical success of immune checkpoint blockade (PD1/PDL1, CTLA4 blocking antibodies) and adoptive
-  T cell terapy in a subset of cancer patients demonstrates the great potential of TST (of tumor-specific cd8 T cells).
+  T cell therapy in a subset of cancer patients demonstrates the great potential of TST (of tumor-specific cd8 T cells).
   
   Immune checkpoint blockade removes inhibitory signals of T-cell activation, which enables tumor-reactive T cells to
   overcome regulatory mechanisms and mount an effective antitumor response (1–3). Such regulatory mechanisms normally

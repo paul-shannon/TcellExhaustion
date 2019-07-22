@@ -84,9 +84,7 @@ tbl.hamidsCuratedLayout <- tbl.layout
 #----------------------------------------------------------------------------------------------------
 ui = shinyUI(fluidPage(
 
-  #tags$head(
-  #        tags$link(rel = "stylesheet", type = "text/css",
-  #                  href = "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")),
+  tags$head(tags$style("#cyjShiny{height:95vh !important;}")),
 
   sidebarLayout(
       sidebarPanel(
@@ -110,6 +108,8 @@ ui = shinyUI(fluidPage(
           actionButton("sfn", "Select First Neighbor"),
           actionButton("fit", "Fit Graph"),
           actionButton("fitSelected", "Fit Selected"),
+          actionButton("hideUnselected", "Hide Unselected"),
+          actionButton("showAll", "Show All"),
           actionButton("clearSelection", "Deselect Nodes"),
           HTML("<br>"),
           actionButton("loopConditions", "Loop Conditions"),
@@ -184,9 +184,18 @@ server = function(input, output, session)
        fitSelected(session, 100)
        })
 
+    observeEvent(input$hideUnselected,  ignoreInit=TRUE,{
+       invertSelection(session)
+       hideSelection(session)
+       })
+
     observeEvent(input$getSelectedNodes, ignoreInit=TRUE, {
        output$selectedNodesDisplay <- renderText({" "})
        getSelectedNodes(session)
+       })
+
+    observeEvent(input$showAll,  ignoreInit=TRUE, {
+       session$sendCustomMessage(type="showAll", message=list())
        })
 
     observeEvent(input$clearSelection,  ignoreInit=TRUE, {
